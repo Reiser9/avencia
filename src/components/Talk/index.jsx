@@ -3,6 +3,37 @@ import OwlCarousel from 'react-owl-carousel';
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 
+const options = {
+    margin: 24,
+    responsiveClass: true,
+    loop: true,
+    items: 6,
+    dots: false,
+    nav: true,
+    stagePadding: 12,
+    navText: ["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='arrow__next img__auto dark' /></div>"],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        480: {
+            items: 2,
+        },
+        768: {
+            items: 3,
+        },
+        998: {
+            items: 4,
+        },
+        1200: {
+            items: 5,
+        },
+        1340: {
+            items: 6,
+        }
+    },
+};
+
 const Talk = () => {
     return(
         <section className='talk default__pad'>
@@ -20,8 +51,7 @@ const Talk = () => {
                         </h2>
                     </div>
 
-                    <OwlCarousel className='review__content talk__content w100' loop margin={24} items={6} nav stagePadding={12}
-                    navText={["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='arrow__next img__auto dark' /></div>"]}>
+                    <OwlCarousel className='review__content talk__content w100' {...options}>
                         <div className='talk__item--wrapper df fdc aifs w100'>
                             <div className='talk__item card df fdc aic w100'>
                                 <div className='talk__item--img--inner df'>

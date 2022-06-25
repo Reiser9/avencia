@@ -38,6 +38,31 @@ const dataReviews = [
     },
 ]
 
+const options = {
+    margin: 24,
+    responsiveClass: true,
+    loop: true,
+    items: 4,
+    dots: false,
+    nav: true,
+    stagePadding: 12,
+    navText: ["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='arrow__next img__auto dark' /></div>"],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        768: {
+            items: 2,
+        },
+        998: {
+            items: 3,
+        },
+        1340: {
+            items: 4,
+        }
+    },
+};
+
 const Review = () => {
     return(
         <section className='review' id='reviews'>
@@ -52,8 +77,7 @@ const Review = () => {
                         </h2>
                     </div>
 
-                    <OwlCarousel className='review__content w100' loop margin={24} items={4} nav stagePadding={12}
-                    navText={["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='arrow__next img__auto dark' /></div>"]}>
+                    <OwlCarousel className='review__content w100' {...options}>
                         {dataReviews.map((d, id) => <ReviewItem key={id} img={d.img} name={d.name} text={d.text} rate={d.rate} />)}
                     </OwlCarousel>
                 </div>

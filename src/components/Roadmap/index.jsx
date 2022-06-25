@@ -3,6 +3,27 @@ import OwlCarousel from 'react-owl-carousel';
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 
+const options = {
+    margin: 24,
+    responsiveClass: true,
+    items: 3,
+    dots: false,
+    nav: true,
+    stagePadding: 12,
+    navText: ["<div class='road__arrow road__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='road__arrow road__arrow--inner df aic jcc'><img src='./assets/img/arrow-right.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='img__auto dark' /></div>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 2,
+        },
+        998: {
+            items: 3,
+        }
+    },
+};
+
 const Roadmap = () => {
     return(
         <section className='road default__pad pr'>
@@ -18,8 +39,7 @@ const Roadmap = () => {
                         Avencia Roadmap
                     </h2>
 
-                    <OwlCarousel className='road__content w100 df pr' margin={24} nav stagePadding={12}
-                    navText={["<div class='road__arrow road__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto' /></div>", "<div class='road__arrow road__arrow--inner df aic jcc'><img src='./assets/img/arrow-right.svg' alt='arrow' class='img__auto' /></div>"]}>
+                    <OwlCarousel className='road__content w100 df pr' {...options}>
                         <div className='road__item df fdc aifs pr'>
                             <div className='road__item--img--inner df aic jcc'>
                                 <img src='./assets/img/check-white.svg' alt='img' className='img__auto' />

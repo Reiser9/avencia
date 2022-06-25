@@ -48,7 +48,7 @@ const Why = () => {
                     <div className='why__item--big'>
                         <div className='why__item--box df fdc aifs w100'>
                             <h2 className='headline1'>
-                                Why<br/>Avencia
+                                Why Avencia
                             </h2>
 
                             <p className='why__item--box--text'>

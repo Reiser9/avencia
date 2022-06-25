@@ -10,7 +10,7 @@ const About = () => {
             <img src='./assets/img/about-bg2-dark.png' alt='img' className='about__bg2 dark pen' />
 
             <div className='container'>
-                <div className='about__inner card w100 df aifs jcsb pr'>
+                <div className='about__inner card w100 pr'>
                     <h2 className='about__title headline1'>
                         About Avencia
                     </h2>

@@ -145,7 +145,7 @@ const Question = () => {
                     </div>
 
                     <div className='token__chart'>
-                        <Chart options={options} series={series} type="donut" width={359} height={359} />
+                        <Chart options={options} series={series} type="donut" width={'100%'} height={'100%'} />
 
                         <img src='./assets/img/n.svg' alt='icon' className='token__chart--icon light pen' />
                         <img src='./assets/img/n-light.svg' alt='icon' className='token__chart--icon dark pen' />
