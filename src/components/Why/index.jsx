@@ -6,7 +6,7 @@ const DataWhy = [
     {
         img: './assets/img/why1.svg',
         title: 'Crypto Back',
-        text: 'from 10% to 1% on every in-store purchase paid in Avencia Tokens'
+        text: 'from 5% to 1% on every in-store purchase paid in Avencia Tokens'
     },
     {
         img: './assets/img/why2.svg',
@@ -16,12 +16,12 @@ const DataWhy = [
     {
         img: './assets/img/why3.svg',
         title: 'Travel Offers',
-        text: 'up to 10% for eligible foreign transactions paid in Avencia Tokens'
+        text: 'up to 5% for eligible foreign transactions paid in Avencia Tokens'
     },
     {
         img: './assets/img/why4.svg',
         title: 'Business Rewards',
-        text: 'Business incentives for using ARTH stable coins, paid in Avencia Tokens'
+        text: 'Business incentives for using platform paid in Avencia Tokens'
     },
     {
         img: './assets/img/why5.svg',
@@ -52,7 +52,7 @@ const Why = () => {
                             </h2>
 
                             <p className='why__item--box--text'>
-                                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing lorem
+                                Avencia is the first fully compliant, CeDeFi exchange that provides full exposure of traditional fiar currency with our extensive ATM network.
                             </p>
                         </div>
                     </div>

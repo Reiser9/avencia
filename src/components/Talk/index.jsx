@@ -6,8 +6,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 const Talk = () => {
     return(
         <section className='talk default__pad'>
-            <img src='./assets/img/talk-img1.svg' alt='img' className='talk__img talk__img1 pen' />
-            <img src='./assets/img/talk-img2.svg' alt='img' className='talk__img talk__img2 pen' />
+            <img src='./assets/img/talk-img1.svg' alt='img' className='talk__img talk__img1 light pen' />
+            <img src='./assets/img/talk-img2.svg' alt='img' className='talk__img talk__img2 light pen' />
+
+            <img src='./assets/img/talk-img1-dark.svg' alt='img' className='talk__img talk__img1 dark pen' />
+            <img src='./assets/img/talk-img2-dark.svg' alt='img' className='talk__img talk__img2 dark pen' />
 
             <div className='container'>
                 <div className='talk__inner w100 df fdc aifs'>
@@ -18,7 +21,7 @@ const Talk = () => {
                     </div>
 
                     <OwlCarousel className='review__content talk__content w100' loop margin={24} items={6} nav stagePadding={12}
-                    navText={["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto' /></div>"]}>
+                    navText={["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='arrow__next img__auto dark' /></div>"]}>
                         <div className='talk__item--wrapper df fdc aifs w100'>
                             <div className='talk__item card df fdc aic w100'>
                                 <div className='talk__item--img--inner df'>

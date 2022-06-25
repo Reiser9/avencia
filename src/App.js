@@ -60,7 +60,8 @@ const App = () => {
                 <div className='container'>
                     <div className='block__inner w100 df aic jcsb'>
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img1.png' alt='img' className='img' />
+                            <img src='./assets/img/block-img1.png' alt='img' className='img light' />
+                            <img src='./assets/img/block-img1-dark.png' alt='img' className='img dark' />
                         </div>
 
                         <div className='block__text--inner w100 df fdc aifs'>
@@ -85,7 +86,8 @@ const App = () => {
             </section>
 
             <section className='block bg pr'>
-                <img src='./assets/img/snake-right.png' alt='img' className='snake__right pen' />
+                <img src='./assets/img/snake-right.png' alt='img' className='snake__right light pen' />
+                <img src='./assets/img/snake-right-dark.png' alt='img' className='snake__right dark pen' />
 
                 <div className='container'>
                     <div className='block__inner w100 df aic jcsb'>
@@ -108,19 +110,22 @@ const App = () => {
                         </div>
 
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img2.png' alt='img' className='img' />
+                            <img src='./assets/img/block-img2.png' alt='img' className='img light' />
+                            <img src='./assets/img/block-img2-dark.png' alt='img' className='img dark' />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className='block bg pr'>
-                <img src='./assets/img/snake-left.png' alt='img' className='snake__left pen' />
+                <img src='./assets/img/snake-left.png' alt='img' className='snake__left light pen' />
+                <img src='./assets/img/snake-left-dark.png' alt='img' className='snake__left dark pen' />
 
                 <div className='container'>
                     <div className='block__inner w100 df aic jcsb'>
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img3.png' alt='img' className='img' />
+                            <img src='./assets/img/block-img3.png' alt='img' className='img light' />
+                            <img src='./assets/img/block-img3-dark.png' alt='img' className='img dark' />
                         </div>
 
                         <div className='block__text--inner w100 df fdc aifs'>
@@ -146,7 +151,8 @@ const App = () => {
                 <div className='container'>
                     <div className='block__inner w100 df aic jcsb'>
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img4.svg' alt='img' className='img' />
+                            <img src='./assets/img/block-img4.svg' alt='img' className='img light' />
+                            <img src='./assets/img/block-img4-dark.svg' alt='img' className='img dark' />
                         </div>
 
                         <div className='block__text--inner w100 df fdc aifs'>
@@ -192,19 +198,22 @@ const App = () => {
                         </div>
 
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img5.png' alt='img' className='img' />
+                            <img src='./assets/img/block-img5.png' alt='img' className='img light' />
+                            <img src='./assets/img/block-img5-dark.png' alt='img' className='img dark' />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className='block pr'>
-                <img src='./assets/img/snake.png' alt='img' className='snake__img pen' />
+                <img src='./assets/img/snake.png' alt='img' className='snake__img light pen' />
+                <img src='./assets/img/snake-dark.png' alt='img' className='snake__img dark pen' />
 
                 <div className='container'>
                     <div className='block__inner w100 df aic jcsb'>
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img6.svg' alt='img' className='img' />
+                            <img src='./assets/img/block-img6.svg' alt='img' className='img light' />
+                            <img src='./assets/img/block-img6-dark.svg' alt='img' className='img dark' />
                         </div>
 
                         <div className='block__text--inner w100 df fdc aifs'>
@@ -250,7 +259,8 @@ const App = () => {
                         </div>
 
                         <div className='block__img--inner df pen'>
-                            <img src='./assets/img/block-img7.png' alt='img' className='img' />
+                            <img src='./assets/img/block-img7.png' alt='img' className='img light' />
+                            <img src='./assets/img/block-img7-dark.png' alt='img' className='img dark' />
                         </div>
                     </div>
                 </div>

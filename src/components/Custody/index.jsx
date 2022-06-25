@@ -3,8 +3,11 @@ import React from 'react';
 const Custody = () => {
     return(
         <section className='custody default__pad'>
-            <img src='./assets/img/custody-img1.svg' alt='img' className='custody__img custody__img1 pen' />
-            <img src='./assets/img/custody-img2.svg' alt='img' className='custody__img custody__img2 pen' />
+            <img src='./assets/img/custody-img1.svg' alt='img' className='custody__img custody__img1 light pen' />
+            <img src='./assets/img/custody-img2.svg' alt='img' className='custody__img custody__img2 light pen' />
+
+            <img src='./assets/img/custody-img1-dark.png' alt='img' className='custody__img custody__img1 dark pen' />
+            <img src='./assets/img/custody-img2-dark.png' alt='img' className='custody__img custody__img2 dark pen' />
 
             <div className='container'>
                 <div className='custody__inner w100 df fdc aic pr'>

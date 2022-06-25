@@ -19,7 +19,8 @@ const options = {
 const Question = () => {
     return(
         <section className='token default__pad pr'>
-            <img src='./assets/img/token-img.svg' alt='img' className='token__img pen' />
+            <img src='./assets/img/token-img.svg' alt='img' className='token__img light pen' />
+            <img src='./assets/img/token-img-dark.svg' alt='img' className='token__img dark pen' />
 
             <div className='container'>
                 <div className='token__inner w100 df aic'>
@@ -146,7 +147,8 @@ const Question = () => {
                     <div className='token__chart'>
                         <Chart options={options} series={series} type="donut" width={359} height={359} />
 
-                        <img src='./assets/img/n.svg' alt='icon' className='token__chart--icon pen' />
+                        <img src='./assets/img/n.svg' alt='icon' className='token__chart--icon light pen' />
+                        <img src='./assets/img/n-light.svg' alt='icon' className='token__chart--icon dark pen' />
                     </div>
                 </div>
             </div>

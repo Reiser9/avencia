@@ -3,8 +3,11 @@ import React from 'react';
 const Tokeninfo = () => {
     return(
         <section className='tokeninfo default__pad pr'>
-            <img src='./assets/img/tokeninfo-bg1.svg' alt='img' className='tokeninfo__bg tokeninfo__bg1 pen' />
-            <img src='./assets/img/tokeninfo-bg2.svg' alt='img' className='tokeninfo__bg tokeninfo__bg2 pen' />
+            <img src='./assets/img/tokeninfo-bg1.svg' alt='img' className='tokeninfo__bg tokeninfo__bg1 light pen' />
+            <img src='./assets/img/tokeninfo-bg2.svg' alt='img' className='tokeninfo__bg tokeninfo__bg2 light pen' />
+
+            <img src='./assets/img/tokeninfo-bg1-dark.svg' alt='img' className='tokeninfo__bg tokeninfo__bg1 dark pen' />
+            <img src='./assets/img/tokeninfo-bg2-dark.svg' alt='img' className='tokeninfo__bg tokeninfo__bg2 dark pen' />
 
             <div className='container'>
                 <div className='tokeninfo__inner w100 df aifs jcsb'>

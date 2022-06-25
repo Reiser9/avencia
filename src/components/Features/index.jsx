@@ -2,7 +2,10 @@ import React from 'react';
 
 const Features = () => {
     return(
-        <section className='feature default__pad' id='features'>
+        <section className='feature default__pad pr' id='features'>
+            <img src='./assets/img/feature-bg.png' alt='img' className='feature__bg light pen' />
+            <img src='./assets/img/feature-bg-dark.png' alt='img' className='feature__bg dark pen' />
+
             <div className='container'>
                 <div className='feature__inner df aifs'>
                     <div className='feature__text--box w100 df fdc aifs fs'>
@@ -17,7 +20,8 @@ const Features = () => {
 
                     <div className='feature__content w100'>
                         <div className='feature__item card df fdc aifs'>
-                            <img src='./assets/img/feature1.png' alt='img' className='img' />
+                            <img src='./assets/img/feature1.png' alt='img' className='img light' />
+                            <img src='./assets/img/feature1-dark.png' alt='img' className='img dark' />
 
                             <p className='feature__item--title headline3'>
                                 Aggregation
@@ -29,7 +33,8 @@ const Features = () => {
                         </div>
 
                         <div className='feature__item card df fdc aifs'>
-                            <img src='./assets/img/feature2.png' alt='img' className='img' />
+                            <img src='./assets/img/feature2.png' alt='img' className='img light' />
+                            <img src='./assets/img/feature2-dark.png' alt='img' className='img dark' />
 
                             <p className='feature__item--title headline3'>
                                 Wallet
@@ -41,7 +46,8 @@ const Features = () => {
                         </div>
 
                         <div className='feature__item card df fdc aifs'>
-                            <img src='./assets/img/feature3.png' alt='img' className='img' />
+                            <img src='./assets/img/feature3.png' alt='img' className='img light' />
+                            <img src='./assets/img/feature3-dark.png' alt='img' className='img dark' />
 
                             <p className='feature__item--title headline3'>
                                 Worldwide ATMs

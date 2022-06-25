@@ -6,8 +6,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 const Roadmap = () => {
     return(
         <section className='road default__pad pr'>
-            <img src='./assets/img/roadmap-img.svg' alt='img' className='road__img pen' />
-            <img src='./assets/img/roadmap-bg.png' alt='img' className='road__bg pen' />
+            <img src='./assets/img/roadmap-img.svg' alt='img' className='road__img light pen' />
+            <img src='./assets/img/roadmap-bg.png' alt='img' className='road__bg light pen' />
+
+            <img src='./assets/img/roadmap-img-dark.svg' alt='img' className='road__img dark pen' />
+            <img src='./assets/img/roadmap-bg-dark.png' alt='img' className='road__bg dark pen' />
 
             <div className='container'>
                 <div className='road__inner w100 df aifs jcsb'>

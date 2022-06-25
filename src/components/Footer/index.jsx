@@ -7,19 +7,25 @@ const Footer = () => {
             <div className='container'>
                 <div className='footer__inner w100 df jcsb'>
                     <div className='footer__wrapper w100 df fdc aifs'>
-                        <Link to='/' className='footer__logo df'>
+                        <Link to='/' className='footer__logo light df'>
                             <img src='./assets/img/logo.svg' alt='logo' className='img' />
+                        </Link>
+
+                        <Link to='/' className='footer__logo dark df'>
+                            <img src='./assets/img/logo-dark.svg' alt='logo' className='img' />
                         </Link>
 
                         <div className='footer__box w100 df fdc aifs'>
                             <p className='footer__text headline8 df aic'>
-                                <img src='./assets/img/location.svg' alt='icon' className='img__auto footer__text--icon' />
+                                <img src='./assets/img/location.svg' alt='icon' className='img__auto footer__text--icon light' />
+                                <img src='./assets/img/location-dark.svg' alt='icon' className='img__auto footer__text--icon dark' />
 
                                 United States
                             </p>
 
                             <p className='footer__text headline8 df aic'>
-                                <img src='./assets/img/message.svg' alt='icon' className='img__auto footer__text--icon' />
+                                <img src='./assets/img/message.svg' alt='icon' className='img__auto footer__text--icon light' />
+                                <img src='./assets/img/message-dark.svg' alt='icon' className='img__auto footer__text--icon dark' />
 
                                 English (United States)
                             </p>

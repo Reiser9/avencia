@@ -6,7 +6,8 @@ const Vision = () => {
             <div className='container'>
                 <div className='vision__inner df aic jcsb'>
                     <div className='vision__img--inner df pen fs'>
-                        <img src='./assets/img/vision-img.svg' alt='img' className='img' />
+                        <img src='./assets/img/vision-img.svg' alt='img' className='img light' />
+                        <img src='./assets/img/vision-img-dark.svg' alt='img' className='img dark' />
                     </div>
 
                     <div className='vision__box w100'>

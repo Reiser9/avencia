@@ -3,8 +3,11 @@ import React from 'react';
 const About = () => {
     return(
         <section className='about default__pad pr' id='about'>
-            <img src='./assets/img/about-bg.svg' alt='img' className='about__bg pen' />
-            <img src='./assets/img/about-bg2.png' alt='img' className='about__bg2 pen' />
+            <img src='./assets/img/about-bg.svg' alt='img' className='about__bg light pen' />
+            <img src='./assets/img/about-bg2.png' alt='img' className='about__bg2 light pen' />
+
+            <img src='./assets/img/about-bg-dark.svg' alt='img' className='about__bg dark pen' />
+            <img src='./assets/img/about-bg2-dark.png' alt='img' className='about__bg2 dark pen' />
 
             <div className='container'>
                 <div className='about__inner card w100 df aifs jcsb pr'>

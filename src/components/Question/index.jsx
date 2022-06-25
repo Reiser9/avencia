@@ -5,12 +5,15 @@ const Question = ({openModal}) => {
         <section className='question default__pad'>
             <div className='container'>
                 <div className='question__inner card w100'>
-                    <img src='./assets/img/question-bg.svg' alt='bg' className='question__bg pen' />
-                    <img src='./assets/img/question.svg' alt='question' className='question__img pen' />
+                    <img src='./assets/img/question-bg.svg' alt='bg' className='question__bg light pen' />
+                    <img src='./assets/img/question.svg' alt='question' className='question__img light pen' />
+
+                    <img src='./assets/img/question-bg-dark.svg' alt='bg' className='question__bg dark pen' />
+                    <img src='./assets/img/question-dark.svg' alt='question' className='question__img dark pen' />
 
                     <div className='question__text--inner df fdc aifs'>
                         <h2 className='headline1'>
-                            Have Other Questions About Avensia?
+                            Have Other Questions About Avencia?
                         </h2>
 
                         <p className='question__text--text'>

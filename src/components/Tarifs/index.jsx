@@ -52,7 +52,7 @@ const dataTarifs = [
             freeExchange: true,
             price: '$750 / month',
             support: true,
-            cryptoBack: '5%'
+            cryptoBack: '3%'
         }
     },
     {
@@ -65,7 +65,7 @@ const dataTarifs = [
             freeExchange: true,
             price: '$1000 / month',
             support: true,
-            cryptoBack: '10%'
+            cryptoBack: '5%'
         }
     }
 ]

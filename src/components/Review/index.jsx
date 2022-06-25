@@ -41,7 +41,8 @@ const dataReviews = [
 const Review = () => {
     return(
         <section className='review' id='reviews'>
-            <img src='./assets/img/review-bg.svg' alt='bg' className='review__bg pen' />
+            <img src='./assets/img/review-bg.svg' alt='bg' className='review__bg light pen' />
+            <img src='./assets/img/review-bg-dark.svg' alt='bg' className='review__bg dark pen' />
 
             <div className='container'>
                 <div className='review__inner w100 df fdc aifs'>
@@ -52,7 +53,7 @@ const Review = () => {
                     </div>
 
                     <OwlCarousel className='review__content w100' loop margin={24} items={4} nav stagePadding={12}
-                    navText={["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto' /></div>"]}>
+                    navText={["<div class='review__arrow review__arrow--inner df aic jcc'><img src='./assets/img/arrow-left.svg' alt='arrow' class='img__auto light' /><img src='./assets/img/arrow-left-dark.svg' alt='arrow' class='img__auto dark' /></div>", "<div class='review__arrow review__arrow--next df aic'>Next<img src='./assets/img/arrow-right.svg' alt='arrow' class='arrow__next img__auto light' /><img src='./assets/img/arrow-right-dark.svg' alt='arrow' class='arrow__next img__auto dark' /></div>"]}>
                         {dataReviews.map((d, id) => <ReviewItem key={id} img={d.img} name={d.name} text={d.text} rate={d.rate} />)}
                     </OwlCarousel>
                 </div>

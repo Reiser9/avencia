@@ -3,8 +3,11 @@ import React from 'react';
 const Lending = () => {
     return(
         <section className='lending default__pad pr'>
-            <img src='./assets/img/lending-bg1.svg' alt='img' className='lending__bg lending__bg1 pen' />
-            <img src='./assets/img/lending-bg2.svg' alt='img' className='lending__bg lending__bg2 pen' />
+            <img src='./assets/img/lending-bg1.svg' alt='img' className='lending__bg lending__bg1 light pen' />
+            <img src='./assets/img/lending-bg2.svg' alt='img' className='lending__bg lending__bg2 light pen' />
+
+            <img src='./assets/img/lending-bg1-dark.svg' alt='img' className='lending__bg lending__bg1 dark pen' />
+            <img src='./assets/img/lending-bg2-dark.svg' alt='img' className='lending__bg lending__bg2 dark pen' />
 
             <div className='container'>
                 <div className='lending__inner df fdc aic'>

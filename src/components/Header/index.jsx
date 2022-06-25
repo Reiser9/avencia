@@ -7,13 +7,29 @@ const Header = () => {
         element.scrollIntoView();
     }
 
+    const changeTheme = () => {
+        let body = document.body.classList;
+        if(!body.contains("dark")){
+            body.remove("light");
+            body.add("dark");
+        }
+        else{
+            body.remove("dark");
+            body.add("light");
+        }
+    }
+
     return(
         <header className='header w100'>
             <div className='container'>
                 <div className='header__inner w100 df aic jcsb'>
                     <div className='header__wrapper df aic'>
-                        <Link to='/' className='header__logo df'>
+                        <Link to='/' className='header__logo light df'>
                             <img src='./assets/img/logo.svg' alt='logo' className='img' />
+                        </Link>
+
+                        <Link to='/' className='header__logo dark df'>
+                            <img src='./assets/img/logo-dark.svg' alt='logo' className='img' />
                         </Link>
 
                         <nav className='header__nav df aic'>
@@ -40,7 +56,7 @@ const Header = () => {
                     </div>
 
                     <div className='header__wrapper df aic'>
-                        <button className='header__theme--change button df aic jcc'>
+                        <button className='header__theme--change button df aic jcc' onClick={changeTheme}>
                             <img src='./assets/img/moon.svg' alt='moon' className='img__auto' />
                         </button>
 

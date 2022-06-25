@@ -10,7 +10,8 @@ const Modal = ({active, setModal}) => {
                             Contact Us
                         </h2>
 
-                        <img src='./assets/img/cross.svg' alt='img' className='modal__cross' onClick={setModal} />
+                        <img src='./assets/img/cross.svg' alt='img' className='modal__cross light' onClick={setModal} />
+                        <img src='./assets/img/cross-dark.svg' alt='img' className='modal__cross dark' onClick={setModal} />
                     </div>
 
                     <div className='modal__wrapper w100 df fdc aifs'>

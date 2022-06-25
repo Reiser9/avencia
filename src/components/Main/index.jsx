@@ -3,12 +3,15 @@ import React from 'react';
 const Main = () => {
     return(
         <section className='main pr'>
-            <img src='./assets/img/main-bg.png' alt='img' className='main__bg pen' />
-            <img src='./assets/img/main-img.png' alt='img' className='main__img pen' />
+            <img src='./assets/img/main-bg.png' alt='img' className='main__bg light pen' />
+            <img src='./assets/img/main-img.png' alt='img' className='main__img light pen' />
+
+            <img src='./assets/img/main-bg-dark.png' alt='img' className='main__bg dark pen' />
+            <img src='./assets/img/main-img-dark.png' alt='img' className='main__img dark pen' />
 
             <div className='container'>
                 <div className='main__inner'>
-                    <div className='main__text--inner w100 df fdc aifs'>
+                    <div className='main__text--inner w100 df fdc aifs pr'>
                         <h1 className='main__title headline1'>
                             Avencia is the <br/>first all in one aggregated crypto atm banking platform
                         </h1>
