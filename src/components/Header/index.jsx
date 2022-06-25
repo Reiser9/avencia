@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = React.useState(false);
     const [darkTheme, setDarkTheme] = React.useState(false);
+    const [menuOpen, setMenuOpen] = React.useState(false);
 
     React.useEffect(() => {
         $(window).on("resize", function(){
