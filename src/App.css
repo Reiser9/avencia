@@ -2299,7 +2299,7 @@ p a{
 }
 @media(max-width: 480px){
 	.container{
-		max-width: 300px;
+		max-width: 85%;
 	}
 
 	.main__title{
@@ -2319,7 +2319,7 @@ p a{
 	}
 
 	.main__img{
-		top: 450px;
+		top: 395px;
 	}
 
 	.why__item{
@@ -2492,5 +2492,10 @@ p a{
 
 	.modal__content{
 		padding: 2.5rem;
+	}
+}
+@media(max-width: 370px){
+	.main__img{
+		top: 430px;
 	}
 }
