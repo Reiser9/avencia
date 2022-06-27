@@ -2612,6 +2612,10 @@ p a{
 	.token__info--mobile--title{
 		color: var(--dark2);
 	}
+
+	.token__info--mobile--text{
+		color: var(--dark);
+	}
 }
 @media(max-width: 466px){
 	.main__img{
