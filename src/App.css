@@ -661,6 +661,10 @@ p a{
 	color: var(--text);
 }
 
+.why__mobile{
+	display: none;
+}
+
 /* Avencia Token */
 .tokeninfo__bg{
 	position: absolute;
@@ -719,6 +723,10 @@ p a{
 
 .tokeninfo__item--img--inner.blue{
 	background: #5D2DE1;
+}
+
+.token__info--mobile{
+	display: none;
 }
 
 /* Tarifs */
@@ -2296,10 +2304,90 @@ p a{
 		background: #2D2F33;
 		left: 18px;
 	}
+
+	.feature__content::-webkit-scrollbar, .why__mobile::-webkit-scrollbar,
+	.tarifs__inner::-webkit-scrollbar, .lending__content::-webkit-scrollbar,
+	.custody__content::-webkit-scrollbar, .team__content::-webkit-scrollbar,
+	.our__content::-webkit-scrollbar, .our__tabs::-webkit-scrollbar,
+	.token__box::-webkit-scrollbar{
+		width: 0;
+		height: 0;
+	}
+
+	.feature__item{
+		width: 90%;
+		flex-shrink: 0;
+	}
+
+	.why__mobile, .tarifs__inner, .feature__content, .lending__content,
+	.custody__content, .team__content, .our__content, .token__box{
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		position: relative;
+		z-index: 2;
+		padding-bottom: 30px;
+	}
+
+	.custody__content, .team__content, .our__content, .token__box{
+		grid-gap: 8px;
+	}
+
+	.why__item{
+		display: none;
+	}
+
+	.why__mobile .why__item{
+		display: flex;
+		flex-shrink: 0;
+		width: 90%;
+		margin-right: 0.8rem;
+	}
+
+	.why__mobile .why__item:last-child{
+		margin-right: 0;
+	}
+
+	.tarifs__item, .tarifs__item--empty, .lending__item, .lending__item--empty,
+	.custody__item, .team__item, .our__item, .token__item{
+		width: auto;
+		flex-shrink: 0;
+	}
+
+	.token__item{
+		width: 60%;
+	}
+
+	.token__box{
+		margin-top: 2.4rem;
+	}
+
+	.custody__item, .team__item{
+		width: 90%;
+		padding: 2.4rem;
+	}
+
+	.our__item{
+		width: 80%;
+		padding: 1.6rem;
+	}
+
+	.lending__item{
+		max-width: 190px;
+	}
+
+	.tarifs__item--empty, .lending__item--empty{
+		max-width: 140px;
+	}
+
+	.lending__content{
+		grid-gap: 8px;
+	}
 }
 @media(max-width: 480px){
 	.container{
-		max-width: 85%;
+		max-width: 90%;
 	}
 
 	.main__title{
@@ -2319,7 +2407,7 @@ p a{
 	}
 
 	.main__img{
-		top: 395px;
+		top: 320px;
 	}
 
 	.why__item{
@@ -2340,7 +2428,7 @@ p a{
 	}
 
 	.why__inner{
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: 1fr;
 	}
 
 	.tokeninfo__item{
@@ -2351,17 +2439,9 @@ p a{
 		padding: 0.4rem 0;
 	}
 
-	.text__end{
-		text-align: left;
-	}
-
 	.tokeninfo__item{
 		padding-top: 1rem;
 		border-top: 2px solid var(--roadline);
-	}
-
-	.tarifs__empty--wrapper, .tarifs__item--empty{
-		align-items: center;
 	}
 
 	.tarifs__empty--wrapper{
@@ -2391,18 +2471,6 @@ p a{
 	.snake__right{
 		max-width: 100%;
 		top: 290px;
-	}
-
-	.lending__item--empty .lending__item--points{
-		margin-top: 0;
-	}
-
-	.lending__item--empty{
-		padding: 0;
-	}
-
-	.lending__item--points{
-		align-items: center;
 	}
 
 	.lending__item--point{
@@ -2493,9 +2561,70 @@ p a{
 	.modal__content{
 		padding: 2.5rem;
 	}
+
+	.feature__content{
+		grid-gap: 8px;
+	}
+
+	.feature__item{
+		padding: 1rem;
+	}
+
+	.why__item{
+		padding: 1.6rem;
+	}
+
+	.lending__item{
+		padding: 1.6rem;
+	}
+
+	.lending__item--empty{
+		padding: 1.6rem 0;
+	}
+
+	.tarifs, .mobile, .review, .team, .footer{
+		padding-bottom: 3rem;
+	}
+
+	.tokeninfo__item, .tokeninfo__item--wrapper{
+		display: none;
+	}
+
+	.token__info--mobile{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 2.4rem;
+	}
+
+	.token__info--mobile:nth-child(3){
+		margin-top: 0;
+	}
+
+	.tokeninfo__content{
+		padding: 2rem 2.5rem;
+	}
+
+	.token__info--mobile--wrapper{
+		margin-top: 1rem;
+	}
+
+	.token__info--mobile--title{
+		color: var(--dark2);
+	}
+}
+@media(max-width: 466px){
+	.main__img{
+		top: 360px;
+	}
 }
 @media(max-width: 370px){
 	.main__img{
 		top: 430px;
+	}
+}
+@media(max-width: 347px){
+	.main__img{
+		top: 500px;
 	}
 }

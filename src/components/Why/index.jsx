@@ -58,6 +58,10 @@ const Why = () => {
                     </div>
 
                     {DataWhy.map((d, id) => <WhyItem key={id} img={d.img} title={d.title} text={d.text} />)}
+
+                    <div className='why__mobile w100'>
+                        {DataWhy.map((d, id) => <WhyItem key={id} img={d.img} title={d.title} text={d.text} />)}
+                    </div>
                 </div>
             </div>
         </section>

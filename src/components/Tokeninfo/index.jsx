@@ -81,6 +81,96 @@ const Tokeninfo = () => {
                                 </p>
                             </div>
                         </div>
+
+                        <div className="token__info--mobile">
+                            <div className='tokeninfo__item--title headline8 df aic'>
+                                <div className='tokeninfo__item--img--inner df aic jcc pink'>
+                                    <img src='./assets/img/n-white.svg' alt='n' className='img__auto' />
+                                </div>
+
+                                50,000 Avencia Tokens
+                            </div>
+
+                            <div className="token__info--mobile--wrapper w100 df aic jcsb">
+                                <p className='token__info--mobile--title headline9'>
+                                    Fee discount
+                                </p>
+
+                                <p className='token__info--mobile--text headline9'>
+                                    15%
+                                </p>
+                            </div>
+
+                            <div className="token__info--mobile--wrapper w100 df aic jcsb">
+                                <p className='token__info--mobile--title headline9'>
+                                    Cryptoback
+                                </p>
+
+                                <p className='token__info--mobile--text headline9'>
+                                    1.00%
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div className="token__info--mobile">
+                            <div className='tokeninfo__item--title headline8 df aic'>
+                                <div className='tokeninfo__item--img--inner df aic jcc purple'>
+                                    <img src='./assets/img/n-white.svg' alt='n' className='img__auto' />
+                                </div>
+
+                                25,000 Avencia Tokens
+                            </div>
+
+                            <div className="token__info--mobile--wrapper w100 df aic jcsb">
+                                <p className='token__info--mobile--title headline9'>
+                                    Fee discount
+                                </p>
+
+                                <p className='token__info--mobile--text headline9'>
+                                    10%
+                                </p>
+                            </div>
+
+                            <div className="token__info--mobile--wrapper w100 df aic jcsb">
+                                <p className='token__info--mobile--title headline9'>
+                                    Cryptoback
+                                </p>
+
+                                <p className='token__info--mobile--text headline9'>
+                                    0.75%
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="token__info--mobile">
+                            <div className='tokeninfo__item--title headline8 df aic'>
+                                <div className='tokeninfo__item--img--inner df aic jcc blue'>
+                                    <img src='./assets/img/n-white.svg' alt='n' className='img__auto' />
+                                </div>
+
+                                10,000 Avencia Tokens
+                            </div>
+
+                            <div className="token__info--mobile--wrapper w100 df aic jcsb">
+                                <p className='token__info--mobile--title headline9'>
+                                    Fee discount
+                                </p>
+
+                                <p className='token__info--mobile--text headline9'>
+                                    5%
+                                </p>
+                            </div>
+
+                            <div className="token__info--mobile--wrapper w100 df aic jcsb">
+                                <p className='token__info--mobile--title headline9'>
+                                    Cryptoback
+                                </p>
+
+                                <p className='token__info--mobile--text headline9'>
+                                    0.50%
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div className='block__text--inner w100 df fdc aifs'>

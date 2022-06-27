@@ -20,8 +20,8 @@ import Question from './components/Question';
 import Token from './components/Token';
 import Roadmap from './components/Roadmap';
 import Team from './components/Team';
-import Modal from './components/Modal';
 import Footer from './components/Footer';
+import Modal from './components/Modal';
 
 const App = () => {
     const [modal, setModal] = React.useState(false);
