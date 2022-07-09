@@ -10,6 +10,7 @@ const Header = () => {
         $(window).on("resize", function(){
             if($(window).width() > 981){
                 setMenuOpen(false);
+                $("body").removeClass("scroll");
             }
         });
     }, []);
@@ -17,7 +18,10 @@ const Header = () => {
     const goto = (point) => {
         let element = document.getElementById(point);
         element.scrollIntoView();
-        menuOpen && setMenuOpen(false);
+        if(menuOpen){
+            setMenuOpen(false);
+            $("body").removeClass("scroll");
+        }
     }
 
     const changeTheme = () => {
@@ -35,7 +39,14 @@ const Header = () => {
     }
 
     const toggleMenu = () => {
-        menuOpen ? setMenuOpen(false) : setMenuOpen(true);
+        if(menuOpen){
+            setMenuOpen(false);
+            $("body").removeClass("scroll");
+        }
+        else{
+            setMenuOpen(true);
+            $("body").addClass("scroll");
+        }
     }
 
     return(
