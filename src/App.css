@@ -82,6 +82,19 @@ body{
 	overflow: hidden;
 }
 
+::-webkit-scrollbar{
+	width: 2px;
+	height: 100%;
+}
+
+::-webkit-scrollbar-thumb{
+	background: var(--primary);
+}
+
+::-webkit-scrollbar-track{
+	background: var(--dark3);
+}
+
 *,
 *:after,
 *:before{
@@ -181,6 +194,10 @@ input::-webkit-inner-spin-button{
 }
 
 /* Class helper */
+.dashboard__padding{
+	padding: 2rem;
+}
+
 .w100{
 	width: 100%;
 }
@@ -195,6 +212,10 @@ input::-webkit-inner-spin-button{
 
 .jcc{
 	justify-content: center;
+}
+
+.jcfe{
+	justify-content: flex-end;
 }
 
 .fdc{
@@ -225,14 +246,37 @@ input::-webkit-inner-spin-button{
 	pointer-events: none;
 }
 
+.pr{
+	position: relative;
+}
+
 .img{
 	width: 100%;
 	height: auto;
 }
 
+.img100{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .img__auto{
 	max-width: 80%;
 	max-height: 80%;
+}
+
+.default__hover:hover{
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.dashboard__title{
+	font-family: 'Poppins', sans-serif;
+	font-size: 3rem;
+	letter-spacing: -1px;
+	line-height: 120%;
+	font-weight: 700;
+	color: var(--dark);
 }
 
 .headline1{
@@ -1784,6 +1828,7 @@ p a{
 /* Dashboard */
 .content__wrapper{
 	height: 100vh;
+	overflow-y: hidden;
 }
 
 .sidebar{
@@ -1794,20 +1839,6 @@ p a{
 	border: 1px solid var(--card-border);
 	box-shadow: var(--card-shadow);
 	backdrop-filter: blur(108.731px);
-	padding-bottom: 2.4rem;
-}
-
-.sidebar::-webkit-scrollbar{
-	width: 2px;
-	height: 100%;
-}
-
-.sidebar::-webkit-scrollbar-thumb{
-	background: var(--primary);
-}
-
-.sidebar::-webkit-scrollbar-track{
-	background: var(--dark3);
 }
 
 .sidebar__balance--inner{
@@ -1883,7 +1914,11 @@ p a{
 	line-height: 150%;
 }
 
-.sidebar__nav--link:hover{
+.sidebar__nav--link.level2{
+	padding-left: 7.2rem;
+}
+
+.sidebar__nav--link:hover, .sidebar__nav--link.active{
 	background: rgba(156, 66, 245, 0.03);
 	color: var(--dark);
 }
@@ -1892,15 +1927,19 @@ p a{
 	margin-right: 2.4rem;
 }
 
+svg.rotate{
+	transform: rotate(180deg);
+}
+
 .sidebar__nav--link svg.m0{
 	margin: 0;
 }
 
-path{
+path, svg{
 	transition: .2s linear;
 }
 
-.sidebar__nav--link:hover path{
+.sidebar__nav--link:hover path, .sidebar__nav--link.active path{
 	fill: var(--primary);
 	fill-opacity: 1;
 }
@@ -1950,6 +1989,7 @@ path{
 
 .wallet__add--icon{
 	margin-right: 0.8rem;
+	width: 20px;
 }
 
 .sidebar__wrapper{
@@ -2025,6 +2065,477 @@ path{
 	padding: 0.2rem 0.4rem;
 	background: rgba(0, 255, 170, 0.03);
 	border-radius: 16px;
+}
+
+.content__header{
+	padding: 0 0 0 2.4rem;
+	border-bottom: 1px solid var(--roadline);
+}
+
+.content__header--wrapper{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba(224, 224, 255, 0.04);
+	margin-right: 2.4rem;
+}
+
+.content__header--profile{
+	padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+}
+
+.content__header--img--inner{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	margin-right: 1.6rem;
+}
+
+.content__header--info--inner{
+	margin-right: 2.4rem;
+	min-width: 110px;
+}
+
+.content__header--info--name{
+	letter-spacing: -0.4px;
+	line-height: 133%;
+	color: var(--dark);
+}
+
+.content__header--info--verify{
+	margin-top: 0.4rem;
+	color: var(--dark3);
+	line-height: 123%;
+}
+
+.content__header--wrapper:last-child{
+	margin-right: 0;
+}
+
+.other__wrapper{
+	transition: .2s linear;
+	display: none;
+}
+
+.other__wrapper.active{
+	display: flex;
+}
+
+.content__header--notify--index{
+	background: var(--primary);
+	color: var(--dark);
+	position: absolute;
+	top: -7px;
+	right: -8px;
+	border-radius: 100px;
+	padding: 0.1rem 0.7rem;
+}
+
+.content{
+	overflow-y: auto;
+}
+
+.content__content{
+	min-height: calc(100vh - 97px);
+}
+
+/* Verification page */
+.verification__content, .welcome__content{
+	padding: 4rem;
+	border-radius: 24px;
+	margin-top: 3.2rem;
+}
+
+.welcome__content{
+	margin-top: 2.4rem;
+}
+
+.verification__bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 24px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.verification__text--inner{
+	max-width: 340px;
+}
+
+.dash__title{
+	color: var(--dark);
+	font-size: 2.4rem;
+	font-weight: 600;
+	letter-spacing: -1px;
+	line-height: 133%;
+}
+
+.dash__text{
+	line-height: 171%;
+	color: var(--dark3);
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.verification__text--text, .welcome__text, .welcome__register--text{
+	margin-top: 1.2rem;
+}
+
+.welcome__register--text{
+	max-width: 340px;
+}
+
+.verification__text--button{
+	padding: 0.8rem 1.6rem;
+	border-radius: 50px;
+	margin-top: 2.4rem;
+}
+
+.verification__text--contact{
+	padding: 1.6rem;
+	margin-top: 4rem;
+	border-radius: 12px;
+	background: rgba(224, 224, 255, 0.04);
+	max-width: 298px;
+	font-size: 1.3rem;
+	color: var(--dark3);
+	line-height: 123%;
+}
+
+.verification__text--contact a{
+	color: var(--dark);
+	font-size: 1.3rem;
+	text-decoration: underline;
+}
+
+/* Welcome page */
+.welcome__inner{
+	margin-top: 2.4rem;
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: 1.5fr 2fr;
+}
+
+.welcome__register{
+	padding: 2.4rem;
+	border-radius: 24px;
+	background: var(--cardBg);
+	box-shadow: var(--card-shadow);
+	border: 1px solid var(--card-border);
+	backdrop-filter: blur(108.731px);
+}
+
+.welcome__register--steps{
+	margin-top: 2.4rem;
+}
+
+.welcome__register--complete{
+	margin-top: 2.4rem;
+	padding: 1.6rem;
+	border-radius: 12px;
+	background: var(--footerBg);
+}
+
+.welcome__register--step{
+	margin-top: 1.6rem;
+	color: var(--dark3);
+	font-size: 1.3rem;
+	line-height: 123%;
+	font-weight: 500;
+	transition: .2s linear;
+}
+
+.welcome__register--step:first-child{
+	margin-top: 0;
+}
+
+.welcome__register--step.success, .welcome__register--step.inprogress{
+	color: var(--dark);
+}
+
+.welcome__register--circle{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px solid rgba(224, 224, 255, 0.4);
+	margin-right: 1.6rem;
+	background: transparent;
+}
+
+.welcome__register--step:before{
+	content: "";
+	display: block;
+	width: 2px;
+	height: 100%;
+	background: rgba(224, 224, 255, 0.12);
+	position: absolute;
+	top: 16px;
+	left: 7px;
+}
+
+.welcome__register--step.success:before{
+	background: var(--primary);
+}
+
+.welcome__register--step:last-child:before{
+	display: none;
+}
+
+.welcome__register--circle .welcome__register--check{
+	opacity: 0;
+}
+
+.welcome__register--step.success .welcome__register--check{
+	opacity: 1;
+}
+
+.welcome__register--step.inprogress .welcome__register--circle,
+.welcome__register--step.success .welcome__register--circle{
+	border: 2px solid var(--primary);
+}
+
+.welcome__register--step.success .welcome__register--circle{
+	background: var(--primary);
+}
+
+.welcome__register--check{
+	width: 12px;
+}
+
+.welcome__resiter--complete--text{
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 123%;
+	color: var(--dark);
+}
+
+.darkness{
+	color: var(--dark3);
+}
+
+.welcome__register--progress--bar{
+	margin-top: 1.2rem;
+	height: 6px;
+	border-radius: 50px;
+	background: rgba(224, 224, 255, 0.03);
+}
+
+.welcome__register--progress{
+	height: 100%;
+	border-radius: 50px;
+	background: var(--gradient);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.welcome__kys{
+	padding: 2.4rem;
+	border-radius: 24px;
+	background: var(--footerBg);
+}
+
+.welcome__kys--inner{
+	max-width: 410px;
+	z-index: 3;
+}
+
+.welcome__kys--points{
+	background: rgba(224, 224, 255, 0.04);
+	padding: 2.4rem;
+	margin-top: 3.8rem;
+	border-radius: 12px;
+}
+
+.welcome__kys--points--button{
+	margin-top: 2.4rem;
+	border-radius: 50px;
+	padding: 0.8rem;
+	font-size: 1.4rem;
+	line-height: 143%;
+}
+
+.welcome__kys--point{
+	margin-top: 1.6rem;
+	font-size: 1.3rem;
+	color: var(--dark);
+	font-weight: 500;
+	line-height: 123%;
+}
+
+.welcome__kys--point:first-child{
+	margin-top: 0;
+}
+
+.welcome__kys--point--icon{
+	width: 16px;
+	margin-right: 1.6rem;
+}
+
+.welcome__kys--bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 24px;
+}
+
+.welcome__kys--img{
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+}
+
+/* Wallets page */
+.wallets__content{
+	margin-top: 2.4rem;
+}
+
+.wallets__content--title{
+	color: var(--dark3);
+	padding-left: 2.4rem;
+}
+
+.wallets__box{
+	margin-top: 1.2rem;
+	grid-gap: 24px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+.wallets__item{
+	border-radius: 24px;
+	padding: 2.4rem;
+	background: var(--cardBg);
+	box-shadow: var(--card-shadow);
+	border: 1px solid var(--card-border);
+	backdrop-filter: blur(108.731px);
+}
+
+.wallets__item--data{
+	margin-top: 2.4rem;
+	display: grid;
+	grid-gap: 4px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wallets__item--data--inner{
+	border-radius: 12px 12px 0 0;
+	padding: 2.4rem;
+	grid-column: 1/4;
+	background: rgba(224, 224, 255, 0.04);
+}
+
+.wallets__item--data--current{
+	color: var(--dark);
+	line-height: 1;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+.wallets__item--data--usd{
+	color: var(--dark3);
+	margin-top: 0.2rem;
+}
+
+.wallets__item--button{
+	background: rgba(224, 224, 255, 0.04);
+	padding: 0.8rem;
+	color: var(--dark3);
+}
+
+.wallets__item--button:first-of-type{
+	border-radius: 0 0 0 12px;
+}
+
+.wallets__item--button:last-of-type{
+	border-radius: 0 0 12px 0;
+}
+
+.wallets__item--icon{
+	margin-right: 0.8rem;
+}
+
+.wallets__item--other--icon:hover path{
+	fill: var(--primary);
+	fill-opacity: 1;
+}
+
+.wallets__item--currency--name{
+	color: var(--dark);
+}
+
+.wallets__item--currency--text{
+	color: var(--dark3);
+}
+
+.wallets__item--currency--img--inner{
+	width: 36px;
+}
+
+.wallets__button--icon, .wallets__item--currency--img--inner{
+	margin-right: 0.8rem;
+}
+
+.wallets__item--favorite{
+	display: none;
+}
+
+.wallets__item--currency--img--inner.favorite .wallets__item--favorite{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #FFAB00;
+	border: 1px solid #222428;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	display: flex;
+}
+
+.wallets__item--favorite--icon{
+	width: 12px;
+}
+
+.wallets__item--add{
+	padding: 2.4rem;
+	border-radius: 24px;
+	background: var(--footerBg);
+}
+
+.wallets__item--add--icon--inner{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba(156, 66, 245, 0.06);
+}
+
+.wallets__item--add--title{
+	margin-top: 2.4rem;
+	color: var(--dark);
+}
+
+.wallets__item--add--text{
+	max-width: 254px;
+	margin-top: 0.2rem;
+	color: var(--dark3);
+}
+
+.wallets__button{
+	color: var(--dark);
+	margin-right: 1.6rem;
+	background: rgba(224, 224, 255, 0.04);
+}
+
+.wallets__button--last, .wallets__button{
+	border-radius: 50px;
+	padding: 0.8rem 1.6rem;
+	line-height: 143%;
 }
 
 /* Responsive */
