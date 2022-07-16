@@ -107,8 +107,6 @@ const Welcome = () => {
                             </button>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 

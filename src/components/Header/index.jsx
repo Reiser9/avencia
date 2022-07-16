@@ -83,6 +83,10 @@ const Header = () => {
                                 <button className='header__nav--link button' onClick={() => goto('reviews')}>
                                     Reviews
                                 </button>
+
+                                <Link to='dashboard' className='header__nav--link'>
+                                    Dashboard
+                                </Link>
                             </nav>
                         </div>
 
