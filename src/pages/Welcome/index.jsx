@@ -20,7 +20,7 @@ const Welcome = () => {
                     <div className="welcome__register--steps w100 df fdc aifs">
                         <div className="welcome__register--step success df aifs pr">
                             <div className="welcome__register--circle df aic jcc">
-                                <img src="/assets/img/check-white.svg" alt="check" className="welcome__register--check pen" />
+                                <img src="/assets/img/check-white-dark.svg" alt="check" className="welcome__register--check pen" />
                             </div>
 
                             Verify email address
@@ -28,7 +28,7 @@ const Welcome = () => {
 
                         <div className="welcome__register--step inprogress df aifs pr">
                             <div className="welcome__register--circle df aic jcc">
-                                <img src="/assets/img/check-white.svg" alt="check" className="welcome__register--check pen" />
+                                <img src="/assets/img/check-white-dark.svg" alt="check" className="welcome__register--check pen" />
                             </div>
 
                             Verify your identity (KYC)
@@ -36,7 +36,7 @@ const Welcome = () => {
 
                         <div className="welcome__register--step notready df aifs pr">
                             <div className="welcome__register--circle df aic jcc">
-                                <img src="/assets/img/check-white.svg" alt="check" className="welcome__register--check pen" />
+                                <img src="/assets/img/check-white-dark.svg" alt="check" className="welcome__register--check pen" />
                             </div>
 
                             Secure your account
@@ -44,7 +44,7 @@ const Welcome = () => {
 
                         <div className="welcome__register--step notready df aifs pr">
                             <div className="welcome__register--circle df aic jcc">
-                                <img src="/assets/img/check-white.svg" alt="check" className="welcome__register--check pen" />
+                                <img src="/assets/img/check-white-dark.svg" alt="check" className="welcome__register--check pen" />
                             </div>
 
                             Set up payment method
@@ -78,7 +78,8 @@ const Welcome = () => {
                         <div className="welcome__kys--points w100">
                             <div className="welcome__kys--point df aic">
                                 <div className="welcome__kys--point--icon df">
-                                    <img src="/assets/img/check-white.svg" alt="icon" className="img" />
+                                    <img src="/assets/img/check-white.svg" alt="icon" className="img light" />
+                                    <img src="/assets/img/check-white-dark.svg" alt="icon" className="img dark" />
                                 </div>
 
                                 Fiat Currency Wallet (USD, EUR, GBP)
@@ -86,7 +87,8 @@ const Welcome = () => {
 
                             <div className="welcome__kys--point df aic">
                                 <div className="welcome__kys--point--icon df">
-                                    <img src="/assets/img/check-white.svg" alt="icon" className="img" />
+                                    <img src="/assets/img/check-white.svg" alt="icon" className="img light" />
+                                    <img src="/assets/img/check-white-dark.svg" alt="icon" className="img dark" />
                                 </div>
 
                                 10+ Digital Crypto Wallet (ETH, BTC, LTC etc)
@@ -94,7 +96,8 @@ const Welcome = () => {
 
                             <div className="welcome__kys--point df aic">
                                 <div className="welcome__kys--point--icon df">
-                                    <img src="/assets/img/check-white.svg" alt="icon" className="img" />
+                                    <img src="/assets/img/check-white.svg" alt="icon" className="img light" />
+                                    <img src="/assets/img/check-white-dark.svg" alt="icon" className="img dark" />
                                 </div>
 
                                 Receive and send payment with NioWallet

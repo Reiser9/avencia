@@ -27,7 +27,7 @@ const options = {
     },
     plotOptions: {
         bar: {
-            columnWidth: '40%',
+            columnWidth: '90%',
             distributed: true,
             borderRadius: 5,
         }

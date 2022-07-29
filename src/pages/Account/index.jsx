@@ -17,7 +17,8 @@ const Account = () => {
                     </button>
 
                     <button className="button default__hover wallets__button df aic headline8">
-                        <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__button--icon" />
+                        <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__button--icon light" />
+                        <img src="/assets/img/arrow-up-dark.svg" alt="icon" className="wallets__button--icon dark" />
 
                         Withdraw
                     </button>
@@ -104,7 +105,7 @@ const Account = () => {
                         </div>
                     </div>
 
-                    <div className="account__chart w100">
+                    <div className="account__chart triple w100">
                         <TripleChart />
                     </div>
                 </div>

@@ -34,16 +34,18 @@ const Chats = () => {
                             <div className="chat__search--input--inner pr w100">
                                 <input type="text" className="default__input swap__search--input" placeholder='Search' />
 
-                                <img src="/assets/img/search.svg" alt="search icon" className="swap__search--icon pen" />
+                                <img src="/assets/img/search.svg" alt="search icon" className="swap__search--icon pen light" />
+                                <img src="/assets/img/search-dark.svg" alt="search icon" className="swap__search--icon pen dark" />
                             </div>
 
                             <button className="button default__hover chat__setting--button df aic jcc fs">
-                                <img src="/assets/img/setting-white.svg" alt="icon" className="chat__icon" />
+                                <img src="/assets/img/setting-white.svg" alt="icon" className="chat__icon light" />
+                                <img src="/assets/img/setting-white-dark.svg" alt="icon" className="chat__icon dark" />
                             </button>
 
                             <button className="button button__default chat__add--button fs">
                                 <span className='df aic jcc'>
-                                    <img src="/assets/img/plus.svg" alt="icon" className="chat__icon" />
+                                    <img src="/assets/img/plus-dark.svg" alt="icon" className="chat__icon" />
                                 </span>
                             </button>
                         </div>
@@ -55,7 +57,8 @@ const Chats = () => {
 
                             <div className="chat__favorites--inner w100 df aic">
                                 <button className="button default__hover chat__favorites--add">
-                                    <img src="/assets/img/plus.svg" alt="icon" className="chat__icon" />
+                                    <img src="/assets/img/plus.svg" alt="icon" className="chat__icon light" />
+                                    <img src="/assets/img/plus-dark.svg" alt="icon" className="chat__icon dark" />
                                 </button>
 
                                 <div className="chat__avatar online">
@@ -276,19 +279,23 @@ const Chats = () => {
 
                         <div className="chats__content--info--buttons df aic">
                             <button className="button default__hover chats__content--info--button df aic jcc">
-                                <img src="/assets/img/phone.svg" alt="icon" className="img__auto" />
+                                <img src="/assets/img/phone.svg" alt="icon" className="img__auto light" />
+                                <img src="/assets/img/phone-dark.svg" alt="icon" className="img__auto dark" />
                             </button>
 
                             <button className="button default__hover chats__content--info--button df aic jcc">
-                                <img src="/assets/img/video.svg" alt="icon" className="img__auto" />
+                                <img src="/assets/img/video.svg" alt="icon" className="img__auto light" />
+                                <img src="/assets/img/video-dark.svg" alt="icon" className="img__auto dark" />
                             </button>
 
                             <button className="button default__hover chats__content--info--button df aic jcc">
-                                <img src="/assets/img/setting-white.svg" alt="icon" className="img__auto" />
+                                <img src="/assets/img/setting-white.svg" alt="icon" className="img__auto light" />
+                                <img src="/assets/img/setting-white-dark.svg" alt="icon" className="img__auto dark" />
                             </button>
 
                             <button className="button default__hover chats__content--info--button df aic jcc">
-                                <img src="/assets/img/person.svg" alt="icon" className="img__auto" />
+                                <img src="/assets/img/person.svg" alt="icon" className="img__auto light" />
+                                <img src="/assets/img/person-dark.svg" alt="icon" className="img__auto dark" />
                             </button>
                         </div>
                     </div>
@@ -355,7 +362,8 @@ const Chats = () => {
 
                     <div className="chats__content--send w100 df aic">
                         <button className="button default__hover chats__content--add--button df aic jcc fs">
-                            <img src="/assets/img/plus.svg" alt="icon" className="img__auto" />
+                            <img src="/assets/img/plus.svg" alt="icon" className="img__auto light" />
+                            <img src="/assets/img/plus-dark.svg" alt="icon" className="img__auto dark" />
                         </button>
 
                         <div className="chats__content--send--input--inner">
@@ -363,7 +371,8 @@ const Chats = () => {
                         </div>
 
                         <button className="button default__hover chats__content--add--button chats__content--smile--button df aic jcc fs">
-                            <img src="/assets/img/smile.svg" alt="icon" className="img__auto" />
+                            <img src="/assets/img/smile.svg" alt="icon" className="img__auto light" />
+                            <img src="/assets/img/smile-dark.svg" alt="icon" className="img__auto dark" />
                         </button>
 
                         <button className="button button__default chats__content--send--button fs">

@@ -47,7 +47,7 @@ const options = {
         },
         labels: {
             style: {
-                colors: "rgba(224, 224, 255, 0.4)",
+                colors: "var(--icon)",
                 fontFamily: 'Montserrat, sans-serif',
                 fontSize: "12px"
             }
@@ -65,7 +65,7 @@ const options = {
         tickAmount: 3,
         labels: {
             style: {
-                colors: "rgba(224, 224, 255, 0.4)",
+                colors: "var(--icon)",
                 fontFamily: 'Montserrat, sans-serif',
                 fontSize: "12px"
             }

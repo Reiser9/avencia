@@ -16,7 +16,8 @@ const Wallets = () => {
                     </button>
 
                     <button className="button default__hover wallets__button df aic headline8">
-                        <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__button--icon" />
+                        <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__button--icon light" />
+                        <img src="/assets/img/arrow-up-dark.svg" alt="icon" className="wallets__button--icon dark" />
 
                         Withdraw
                     </button>
@@ -80,13 +81,15 @@ const Wallets = () => {
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Withdraw
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Deposit
                             </button>
@@ -136,13 +139,15 @@ const Wallets = () => {
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Withdraw
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Deposit
                             </button>
@@ -192,13 +197,15 @@ const Wallets = () => {
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Withdraw
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Deposit
                             </button>
@@ -256,13 +263,15 @@ const Wallets = () => {
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Withdraw
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Deposit
                             </button>
@@ -312,13 +321,15 @@ const Wallets = () => {
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Withdraw
                             </button>
 
                             <button className="button wallets__item--button default__hover df aic jcc headline8">
-                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon" />
+                                <img src="/assets/img/arrow-up.svg" alt="icon" className="wallets__item--icon light" />
+                                <img src="/assets/img/arrow-up-op.svg" alt="icon" className="wallets__item--icon dark" />
 
                                 Deposit
                             </button>
@@ -327,7 +338,8 @@ const Wallets = () => {
 
                     <button className="button default__hover wallets__item--add df fdc aic jcc">
                         <div className="wallets__item--add--icon--inner df aic jcc">
-                            <img src="/assets/img/plus.svg" alt="plus" className="wallets__item--add--icon" />
+                            <img src="/assets/img/plus.svg" alt="plus" className="wallets__item--add--icon light" />
+                            <img src="/assets/img/plus-dark.svg" alt="plus" className="wallets__item--add--icon dark" />
                         </div>
 
                         <p className="wallets__item--add--title text__center">

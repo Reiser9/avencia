@@ -24,14 +24,26 @@ import Application from '../Application';
 
 const Dashboard = () => {
     const [otherOpen, setOtherOpen] = React.useState(false);
+    const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
     return(
         <div className='content__wrapper w100 df'>
-            <div className="sidebar w100 fs df fdc aifs">
+            {sidebarOpen && <div className="content__menu--mobile aic jcc" onClick={() => setSidebarOpen(false)}>
+                <img src="/assets/img/menu.svg" alt="menu" className="content__menu--img light" />
+                <img src="/assets/img/menu-dark.svg" alt="menu" className="content__menu--img dark" />
+            </div>}
+
+            <div className={`sidebar w100 fs df fdc aifs${sidebarOpen ? " disable" : ""}`}>
                 <div className="sidebar__balance--inner w100 df fdc aifs">
-                    <Link to='/' className='sidebar__logo df'>
-                        <img src='/assets/img/logo-dark.svg' alt='logo' className='img' />
-                    </Link>
+                    <div className="sidebar__wrap">
+                        <Link to='/' className='sidebar__logo df'>
+                            <img src='/assets/img/logo.svg' alt='logo' className='img light' />
+                            <img src='/assets/img/logo-dark.svg' alt='logo' className='img dark' />
+                        </Link>
+
+                        <img src="/assets/img/cross.svg" alt="cross" className="sidebar__close light" onClick={() => setSidebarOpen(true)} />
+                        <img src="/assets/img/cross-dark.svg" alt="cross" className="sidebar__close dark" onClick={() => setSidebarOpen(true)} />
+                    </div>
 
                     <div className="sidebar__balance--content w100 df aic jcsb">
                         <div className="sidebar__balance df fdc aifs">
@@ -45,7 +57,8 @@ const Dashboard = () => {
                         </div>
 
                         <button className="button sidebar__balance--icon--inner default__hover df aic jcc">
-                            <img src="/assets/img/wave.svg" alt="img" className="img__auto" />
+                            <img src="/assets/img/wave.svg" alt="img" className="img__auto light" />
+                            <img src="/assets/img/wave-dark.svg" alt="img" className="img__auto dark" />
                         </button>
                     </div>
 
@@ -53,7 +66,8 @@ const Dashboard = () => {
                         <div className="sidebar__profits--content df fdc aifs">
                             <div className="sidebar__profits--item w100 df aic jcsb">
                                 <p className="sidebar__profits--item--title df aic headline9">
-                                    <img src="/assets/img/tag.svg" alt="icon" className="sidebar__profits--img" />
+                                    <img src="/assets/img/tag.svg" alt="icon" className="sidebar__profits--img light" />
+                                    <img src="/assets/img/tag-dark.svg" alt="icon" className="sidebar__profits--img dark" />
 
                                     Profits
                                 </p>
@@ -69,7 +83,8 @@ const Dashboard = () => {
 
                             <div className="sidebar__profits--item w100 df aic jcsb">
                                 <p className="sidebar__profits--item--title df aic headline9">
-                                    <img src="/assets/img/time.svg" alt="icon" className="sidebar__profits--img" />
+                                    <img src="/assets/img/time.svg" alt="icon" className="sidebar__profits--img light" />
+                                    <img src="/assets/img/time-dark.svg" alt="icon" className="sidebar__profits--img dark" />
 
                                     Deposit in orders
                                 </p>
@@ -87,7 +102,8 @@ const Dashboard = () => {
                         </button>
 
                         <button className="button sidebar__profits--button sidebar__profits--withdraw default__hover df jcc headline8">
-                            <img src="/assets/img/arrow-up.svg" alt="icon" className='sidebar__profits--icon' />
+                            <img src="/assets/img/arrow-up.svg" alt="icon" className='sidebar__profits--icon light' />
+                            <img src="/assets/img/arrow-up-dark.svg" alt="icon" className='sidebar__profits--icon dark' />
 
                             Withdraw
                         </button>
@@ -192,24 +208,28 @@ const Dashboard = () => {
                     </div>
 
                     <button className="button wallet__add w100 default__hover df aic jcc headline8">
-                        <img src="/assets/img/plus.svg" alt="icon" className="wallet__add--icon" />
+                        <img src="/assets/img/plus.svg" alt="icon" className="wallet__add--icon light" />
+                        <img src="/assets/img/plus-dark.svg" alt="icon" className="wallet__add--icon dark" />
 
                         Add wallet
                     </button>
 
                     <div className="sidebar__wrapper w100">
                         <button className="sidebar__button button default__hover df aic jcc headline8">
-                            <img src="/assets/img/question-icon.svg" alt="icon" className="sidebar__button--icon" />
+                            <img src="/assets/img/question-icon.svg" alt="icon" className="sidebar__button--icon light" />
+                            <img src="/assets/img/question-icon-dark.svg" alt="icon" className="sidebar__button--icon dark" />
 
                             Support
                         </button>
 
                         <button className="sidebar__button button default__hover df aic jcc headline8">
-                            <img src="/assets/img/world.svg" alt="icon" className="sidebar__button--icon" />
+                            <img src="/assets/img/world.svg" alt="icon" className="sidebar__button--icon light" />
+                            <img src="/assets/img/world-dark.svg" alt="icon" className="sidebar__button--icon dark" />
 
                             English
 
-                            <img src="/assets/img/arrow-right-white.svg" alt="icon" className="sidebar__button--arrow" />
+                            <img src="/assets/img/arrow-right-white.svg" alt="icon" className="sidebar__button--arrow light" />
+                            <img src="/assets/img/arrow-right-white-dark.svg" alt="icon" className="sidebar__button--arrow dark" />
                         </button>
                     </div>
                 </div>
@@ -217,12 +237,14 @@ const Dashboard = () => {
 
             <div className="content w100 df fdc aifs">
                 <div className="content__header w100 df aic jcfe">
-                    <button className="button content__header--wrapper default__hover df aic jcc">
-                        <img src="/assets/img/message-white.svg" alt="icon" className="img__auto" />
+                    <button className="button mess content__header--wrapper default__hover df aic jcc">
+                        <img src="/assets/img/message-white.svg" alt="icon" className="img__auto light" />
+                        <img src="/assets/img/message-white-dark.svg" alt="icon" className="img__auto dark" />
                     </button>
 
-                    <button className="button content__header--wrapper default__hover df aic jcc pr">
-                        <img src="/assets/img/notify.svg" alt="icon" className="img__auto" />
+                    <button className="button mess content__header--wrapper default__hover df aic jcc pr">
+                        <img src="/assets/img/notify.svg" alt="icon" className="img__auto light" />
+                        <img src="/assets/img/notify-dark.svg" alt="icon" className="img__auto dark" />
 
                         <span className="content__header--notify--index headline8">
                             9+
@@ -245,7 +267,8 @@ const Dashboard = () => {
                         </div>
 
                         <button className="button content__header--wrapper default__hover df aic jcc pr">
-                            <img src="/assets/img/arrow-down-white.svg" alt="icon" className="img__auto" />
+                            <img src="/assets/img/arrow-down-white.svg" alt="icon" className="img__auto light" />
+                            <img src="/assets/img/arrow-down-white-dark.svg" alt="icon" className="img__auto dark" />
                         </button>
                     </div>
                 </div>

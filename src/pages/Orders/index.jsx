@@ -10,7 +10,8 @@ const Orders = () => {
 
                 <div className="wallets__button--inner df aic">
                     <button className="button default__hover wallets__button df aic headline8">
-                        <img src="/assets/img/download.svg" alt="icon" className="wallets__button--icon" />
+                        <img src="/assets/img/download.svg" alt="icon" className="wallets__button--icon light" />
+                        <img src="/assets/img/download-dark.svg" alt="icon" className="wallets__button--icon dark" />
 
                         Get Statement
                     </button>

@@ -144,7 +144,8 @@ const Application = () => {
 
                             <div className="welcome__kys--point df aic">
                                 <div className="welcome__kys--point--icon df">
-                                    <img src="/assets/img/check-white.svg" alt="icon" className="img" />
+                                    <img src="/assets/img/check-white.svg" alt="icon" className="img light" />
+                                    <img src="/assets/img/check-white-dark.svg" alt="icon" className="img dark" />
                                 </div>
 
                                 Chosen credential must not be expaired
@@ -152,7 +153,8 @@ const Application = () => {
 
                             <div className="welcome__kys--point df aic">
                                 <div className="welcome__kys--point--icon df">
-                                    <img src="/assets/img/check-white.svg" alt="icon" className="img" />
+                                    <img src="/assets/img/check-white.svg" alt="icon" className="img light" />
+                                    <img src="/assets/img/check-white-dark.svg" alt="icon" className="img dark" />
                                 </div>
 
                                 Document should be good condition and clearly visible
@@ -160,7 +162,8 @@ const Application = () => {
 
                             <div className="welcome__kys--point df aic">
                                 <div className="welcome__kys--point--icon df">
-                                    <img src="/assets/img/check-white.svg" alt="icon" className="img" />
+                                    <img src="/assets/img/check-white.svg" alt="icon" className="img light" />
+                                    <img src="/assets/img/check-white-dark.svg" alt="icon" className="img dark" />
                                 </div>
 
                                 Make sure that there is no light glare on the card
@@ -180,7 +183,8 @@ const Application = () => {
                                 <input className="input__file" id="front" type="file" accept=".png, .jpg, .webm, .pdf" />
 
                                 <label htmlFor="front" className="application__upload--button default__hover df aic">
-                                    <img src="/assets/img/out.svg" alt="icon" className="application__upload--button--icon" />
+                                    <img src="/assets/img/out.svg" alt="icon" className="application__upload--button--icon light" />
+                                    <img src="/assets/img/out-dark.svg" alt="icon" className="application__upload--button--icon dark" />
 
                                     Upload Copy
                                 </label>
@@ -202,7 +206,8 @@ const Application = () => {
                                 <input className="input__file" id="front" type="file" accept=".png, .jpg, .webm, .pdf" />
 
                                 <label htmlFor="front" className="application__upload--button default__hover df aic">
-                                    <img src="/assets/img/out.svg" alt="icon" className="application__upload--button--icon" />
+                                    <img src="/assets/img/out.svg" alt="icon" className="application__upload--button--icon light" />
+                                    <img src="/assets/img/out-dark.svg" alt="icon" className="application__upload--button--icon dark" />
 
                                     Upload Copy
                                 </label>

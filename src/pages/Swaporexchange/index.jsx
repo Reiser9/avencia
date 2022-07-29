@@ -63,7 +63,8 @@ const Swaporexchange = () => {
                             <input type="number" className="default__input swap__item--input" placeholder="Input amount" />
 
                             <button className="button default__hover swap__item--swap df jcc aic">
-                                <img src="/assets/img/swap.svg" alt="icon" className="swap__item--swap--icon" />
+                                <img src="/assets/img/swap.svg" alt="icon" className="swap__item--swap--icon light" />
+                                <img src="/assets/img/swap-dark.svg" alt="icon" className="swap__item--swap--icon dark" />
                             </button>
                         </div>
                     </div>

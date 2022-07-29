@@ -46,11 +46,13 @@ const MainDashboard = () => {
 
                             <div className="dashboard__overview--balance--wrapper df aic">
                                 <button className="button default__hover chats__content--info--button df aic jcc">
-                                    <img src="/assets/img/gear.svg" alt="icon" className="img__auto" />
+                                    <img src="/assets/img/gear.svg" alt="icon" className="img__auto light" />
+                                    <img src="/assets/img/gear-dark.svg" alt="icon" className="img__auto dark" />
                                 </button>
 
                                 <button className="button default__hover chats__content--info--button df aic jcc">
-                                    <img src="/assets/img/swap-white.svg" alt="icon" className="img__auto" />
+                                    <img src="/assets/img/swap-white.svg" alt="icon" className="img__auto light" />
+                                    <img src="/assets/img/swap-white-dark.svg" alt="icon" className="img__auto dark" />
                                 </button>
 
                                 <button className="button button__default dashboard__overview--button">
@@ -75,7 +77,8 @@ const MainDashboard = () => {
                             </div>
 
                             <button className="button default__hover chats__content--info--button df aic jcc">
-                                <img src="/assets/img/send-dark.svg" alt="icon" className="img__auto" />
+                                <img src="/assets/img/send-dark.svg" alt="icon" className="img__auto light" />
+                                <img src="/assets/img/send-dark-dark.svg" alt="icon" className="img__auto dark" />
                             </button>
                         </div>
 
@@ -91,7 +94,8 @@ const MainDashboard = () => {
                             </div>
 
                             <button className="button default__hover chats__content--info--button df aic jcc">
-                                <img src="/assets/img/card.svg" alt="icon" className="img__auto" />
+                                <img src="/assets/img/card.svg" alt="icon" className="img__auto light" />
+                                <img src="/assets/img/card-dark.svg" alt="icon" className="img__auto dark" />
                             </button>
                         </div>
 
@@ -375,7 +379,7 @@ const MainDashboard = () => {
 
                         <button className="button button__default refs__button">
                             <span className="df aic">
-                                <img src="/assets/img/plus.svg" alt="icon" className="refs__icon" />
+                                <img src="/assets/img/plus-dark.svg" alt="icon" className="refs__icon" />
 
                                 Invite
                             </span>
@@ -389,7 +393,8 @@ const MainDashboard = () => {
                     <div className="refs__copy--inner w100 pr">
                         <input type="text" value={copyLink} readOnly className="input refs__copy--input" />
 
-                        <img src="/assets/img/copy.svg" alt="copy" className="refs__copy" onClick={copy} />
+                        <img src="/assets/img/copy.svg" alt="copy" className="refs__copy light" onClick={copy} />
+                        <img src="/assets/img/copy-dark.svg" alt="copy" className="refs__copy dark" onClick={copy} />
                     </div>
                 </div>
 

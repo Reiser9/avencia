@@ -46,7 +46,7 @@ const options = {
             return "#9C42F5"
         }
         else {
-            return "rgba(224, 224, 255, 0.12)"
+            return "rgba(224, 224, 255, 0.64)"
         }
     }],
     plotOptions: {

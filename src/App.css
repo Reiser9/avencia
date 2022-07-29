@@ -20,6 +20,8 @@
 	--cardBg: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(250, 251, 252, 0.6) 51.82%, rgba(245, 247, 250, 0.4) 100%);
 	--roadline: rgba(20, 16, 41, 0.06);
 	--footerBg: rgba(235, 239, 245, 0.6);
+	--hover: rgba(0, 0, 0, 0.15);
+	--icon:  rgba(0, 0, 0, 0.4);
 
 	/* Shadows */
 	--primary-shadow: 0px 0px 1px rgba(156, 66, 245, 0.24), 0px 2px 4px -1px rgba(27, 10, 82, 0.12), 0px 16px 24px rgba(156, 66, 245, 0.24), 0px 8px 8px -4px rgba(156, 66, 245, 0.12);
@@ -49,6 +51,8 @@ body.dark{
 	--roadline: rgba(224, 224, 255, 0.06);
 	--cardBg: linear-gradient(135deg, rgba(245, 247, 250, 0.12) 0%, rgba(245, 247, 250, 0.06) 52.14%, rgba(245, 247, 250, 0.0001) 100%);
 	--footerBg: rgba(9, 13, 20, 0.24);
+	--hover: rgba(255, 255, 255, 0.15);
+	--icon:  rgba(224, 224, 255, 0.4);
 
 	/* Shadows */
 	--card-shadow: 0px 1px 1px rgba(9, 13, 20, 0.4), -4px -4px 8px rgba(224, 224, 255, 0.04), 8px 8px 24px rgba(9, 13, 20, 0.4);
@@ -65,7 +69,7 @@ body.dark .light, body.light .dark{
 }
 
 body.dark .dark, body.light .light{
-	display: flex;
+	display: inline-block;
 }
 
 html{
@@ -282,7 +286,7 @@ input{
 }
 
 .default__hover:hover{
-	background: rgba(255, 255, 255, 0.15);
+	background: var(--hover);
 }
 
 .dashboard__title{
@@ -1859,7 +1863,7 @@ p a{
 .sidebar__balance--inner{
 	padding: 2.4rem;
 	border-radius: 0 0 24px 0;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .sidebar__logo{
@@ -1874,7 +1878,7 @@ p a{
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .sidebar__balance--text{
@@ -1900,14 +1904,14 @@ p a{
 
 .sidebar__profits--content{
 	grid-column: 1/3;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	padding: 1.2rem;
 	border-radius: 12px 12px 0 0;
 }
 
 .sidebar__profits--button{
 	padding: 0.8rem;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	color: var(--dark);
 	line-height: 143%;
 }
@@ -1995,13 +1999,13 @@ path, svg{
 .wallet__item{
 	padding: 1.6rem;
 	border-radius: 12px;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .wallet__add{
 	margin-top: 1.2rem;
 	border-radius: 12px;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	padding: 0.8rem;
 	line-height: 143%;
 	color: var(--dark);
@@ -2020,7 +2024,7 @@ path, svg{
 }
 
 .sidebar__button{
-	background: rgba(224, 224, 255, 0.02);
+	background: var(--roadline);
 	border-radius: 12px;
 	padding: .8rem;
 	color: var(--dark);
@@ -2040,7 +2044,7 @@ path, svg{
 	height: 36px;
 	margin-right: 0.8rem;
 	border-radius: 50%;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .wallet__item--text--text{
@@ -2079,7 +2083,7 @@ path, svg{
 
 .sidebar__profits--procents{
 	font-size: 1.2rem;
-	color: #00FFAA;
+	color: #3fdf7c;
 	font-weight: 600;
 	line-height: 120%;
 	padding: 0.2rem 0.4rem;
@@ -2096,7 +2100,7 @@ path, svg{
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	margin-right: 2.4rem;
 }
 
@@ -2217,7 +2221,7 @@ path, svg{
 	padding: 1.6rem;
 	margin-top: 4rem;
 	border-radius: 12px;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	max-width: 298px;
 	font-size: 1.3rem;
 	color: var(--dark3);
@@ -2287,7 +2291,7 @@ path, svg{
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
-	border: 2px solid rgba(224, 224, 255, 0.4);
+	border: 2px solid var(--roadline);
 	margin-right: 1.6rem;
 	background: transparent;
 }
@@ -2297,7 +2301,7 @@ path, svg{
 	display: block;
 	width: 2px;
 	height: 100%;
-	background: rgba(224, 224, 255, 0.12);
+	background: var(--tab-border);
 	position: absolute;
 	top: 16px;
 	left: 7px;
@@ -2347,7 +2351,7 @@ path, svg{
 	margin-top: 1.2rem;
 	height: 6px;
 	border-radius: 50px;
-	background: rgba(224, 224, 255, 0.03);
+	background: var(--roadline);
 }
 
 .welcome__register--progress{
@@ -2365,7 +2369,7 @@ path, svg{
 }
 
 .welcome__kys--points{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	padding: 2.4rem;
 	margin-top: 3.8rem;
 	border-radius: 12px;
@@ -2410,6 +2414,7 @@ path, svg{
 	position: absolute;
 	bottom: 30px;
 	right: 10px;
+	width: 36%;
 }
 
 /* Wallets page */
@@ -2449,7 +2454,7 @@ path, svg{
 	border-radius: 12px 12px 0 0;
 	padding: 2.4rem;
 	grid-column: 1/4;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .wallets__item--data--current{
@@ -2466,7 +2471,7 @@ path, svg{
 }
 
 .wallets__item--button{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	padding: 0.8rem;
 	color: var(--dark3);
 }
@@ -2513,7 +2518,7 @@ path, svg{
 	height: 16px;
 	border-radius: 50%;
 	background: #FFAB00;
-	border: 1px solid #222428;
+	border: 1px solid var(--bg);
 	position: absolute;
 	top: -2px;
 	right: -2px;
@@ -2551,7 +2556,7 @@ path, svg{
 .wallets__button{
 	color: var(--dark);
 	margin-right: 1.6rem;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .wallets__button--last, .wallets__button{
@@ -2640,7 +2645,7 @@ path, svg{
 
 .application__item--data{
 	margin: 0 0.8rem 0.8rem 0;
-	background: rgba(224, 224, 255, 0.03);
+	background: var(--roadline);
 	border-radius: 24px;
 	padding: 0.8rem 1.6rem 0.8rem 0.8rem;
 	color: var(--dark2);
@@ -2673,7 +2678,7 @@ path, svg{
 	border-radius: 50%;
 	margin-right: 0.8rem;
 	transition: .2s linear;
-	background: rgba(224, 224, 255, 0.03);
+	background: var(--roadline);
 }
 
 .application__item--data--circle:before{
@@ -2682,7 +2687,7 @@ path, svg{
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: var(--dark);
+	background: #fff;
 	position: absolute;
 	top: 6px;
 	left: 6px;
@@ -2702,7 +2707,7 @@ path, svg{
 }
 
 .application__upload--inner{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	border-radius: 12px;
 	margin-top: 1.6rem;
 	padding: 1.6rem;
@@ -2717,6 +2722,7 @@ path, svg{
 	top: 0;
 	right: 0;
 	max-height: 100%;
+	z-index: -1;
 }
 
 .application__upload--text{
@@ -2727,7 +2733,7 @@ path, svg{
 }
 
 .application__upload--button{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	border-radius: 50px;
 	padding: 0.8rem 1.6rem .8rem .8rem;
 	font-size: 1.4rem;
@@ -2784,7 +2790,7 @@ path, svg{
 	display: block;
 	width: 24px;
 	height: 24px;
-	border: 2px solid rgba(224, 224, 255, 0.4);
+	border: 2px solid var(--roadline);
 	border-radius: 4px;
 	position: absolute;
 	left: 0;
@@ -2797,7 +2803,7 @@ path, svg{
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url("../public/assets/img/check-white.svg") center no-repeat;
+	background: url("../public/assets/img/check-white-dark.svg") center no-repeat;
 	background-size: cover;
 	position: absolute;
 	top: 2px;
@@ -2806,14 +2812,19 @@ path, svg{
 	opacity: 0;
 }
 
+.icon__dash{
+	fill: var(--icon);
+}
+
 /* Профиль */
 .profile__tabs{
 	margin-top: 1.6rem;
+	flex-wrap: wrap;
 }
 
 .profila__tab:hover, .profila__tab.active{
-	background: #2D2F33;
-	box-shadow: 0px 0px 1px rgba(9, 13, 20, 0.4), 0px 2px 4px -1px rgba(9, 13, 20, 0.24), 0px 8px 8px -4px rgba(9, 13, 20, 0.24);
+	background: var(--bg);
+	box-shadow: var(--card-shadow);
 }
 
 .profila__tab .our__tab--text{
@@ -2848,7 +2859,7 @@ path, svg{
 }
 
 .profile__button{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .profile__item--title{
@@ -2949,8 +2960,8 @@ path, svg{
 .swap__item--swap{
 	width: 36px;
 	height: 36px;
-	background: #2D2F33;
-	border: 2px solid var(--bg);
+	background: var(--bg);
+	border: 2px solid var(--roadline);
 	border-radius: 12px;
 	position: absolute;
 	top: calc(100% - 6px);
@@ -3027,7 +3038,7 @@ path, svg{
 }
 
 .swap__search--inner{
-	margin: 0rem 1.6rem;
+	margin: 1rem 0 0 0;
 }
 
 .swap__search--input{
@@ -3132,7 +3143,7 @@ path, svg{
 
 .chat__setting--button{
 	margin-right: 1.6rem;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .chat__search--input--inner{
@@ -3159,7 +3170,7 @@ path, svg{
 }
 
 .chat__favorites--add{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .chat__avatar, .chat__favorites--add{
@@ -3224,7 +3235,7 @@ path, svg{
 }
 
 .chat__messages--item:hover, .chat__messages--item.active{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .chat__messages--item:hover .chat__messages--text,
@@ -3289,7 +3300,7 @@ path, svg{
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	margin-right: 2.4rem;
 }
 
@@ -3321,7 +3332,7 @@ path, svg{
 
 .chats__content--unread{
 	padding: 0.8rem;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	font-weight: 500;
 	margin-top: 1.6rem;
 }
@@ -3344,7 +3355,7 @@ path, svg{
 }
 
 .chats__content--message--content{
-	background-color: rgba(224, 224, 255, 0.04);
+	background-color: var(--roadline);
 	border-radius: 12px;
 	padding: 0.8rem 1.2rem;
 	max-width: 470px;
@@ -3363,7 +3374,7 @@ path, svg{
 }
 
 .chats__content--add--button{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .chats__content--send--button, .chats__content--add--button{
@@ -3427,7 +3438,7 @@ path, svg{
 }
 
 .dashboard__wallets--item--item{
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 	border-radius: 12px;
 	padding: 1.6rem;
 }
@@ -3475,7 +3486,7 @@ path, svg{
 .dashboard__overview--item, .dashboard__overview--balance{
 	padding: 2.4rem;
 	border-radius: 12px;
-	background: rgba(224, 224, 255, 0.04);
+	background: var(--roadline);
 }
 
 .dashboard__main--tabs .profila__tab .our__tab--text{
@@ -3516,6 +3527,7 @@ path, svg{
 
 .refs__icon{
 	margin-right: 0.8rem;
+	width: 20px;
 }
 
 .refs__button{
@@ -3577,6 +3589,18 @@ path, svg{
 	margin-top: 2rem;
 }
 
+.sidebar__wrap{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+body.light .sidebar__close.light, body.dark .sidebar__close.dark{
+	cursor: pointer;
+	display: none;
+}
+
 /* Account */
 .account__item{
 	margin-top: 2.4rem;
@@ -3621,7 +3645,7 @@ path, svg{
 
 .account__text--profit.plus{
 	background: rgba(0, 255, 255, 0.03);
-	color: #00FFFF;
+	color: #3fdf7c;
 }
 
 .account__text--title{
@@ -3653,10 +3677,31 @@ path, svg{
 	border-right: 0;
 }
 
+.content__menu--mobile{
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	z-index: 5;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	background: var(--bg);
+	display: none;
+}
+
 /* Responsive */
 @media(max-width: 1600px){
 	.main__point{
 		padding-right: 2rem;
+	}
+}
+@media(max-width: 1380px){
+	.welcome__kys--img{
+		display: none;
+	}
+
+	.welcome__kys--inner{
+		max-width: 100%;
 	}
 }
 @media(max-width: 1340px){
@@ -3698,6 +3743,38 @@ path, svg{
 
 	.snake__left{
 		max-width: 250px;
+	}
+
+	.account__content{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.account__text--inner.big, .account__text--inner{
+		border-right: none;
+		padding: 0;
+		margin-right: 0;
+		max-width: 100%;
+	}
+
+	.chats__content--info--button{
+		width: 36px;
+		height: 36px;
+		margin-right: 1.2rem;
+	}
+
+	.chat__avatar, .chat__favorites--add, .chat__avatar.text{
+		width: 36px;
+	}
+
+	.chat__avatar, .chat__favorites--add{
+		height: 36px;
+		display: block;
+	}
+
+	.chats__content--dialogs{
+		width: 300px;
+		margin-right: 1.2rem;
 	}
 }
 @media(max-width: 1200px){
@@ -3758,6 +3835,20 @@ path, svg{
 
 	.footer__join--inner{
 		margin-top: 3rem;
+	}
+}
+@media(max-width: 1080px){
+	.chats__content--info{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.chats__content--info--buttons{
+		margin-top: 1rem;
+	}
+
+	.chats__content--message{
+		padding: 0rem 1.2rem;
 	}
 }
 @media(max-width: 998px){
@@ -3987,6 +4078,27 @@ path, svg{
 
 	.mobile__menu--social{
 		margin-top: 4.8rem;
+	}
+
+	.sidebar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		transition: .3s ease-in-out;
+	}
+
+	.sidebar.disable{
+		transform: translateX(-110%);
+	}
+
+	body.light .sidebar__close.light, body.dark .sidebar__close.dark{
+		display: block;
+	}
+
+	.content__menu--mobile{
+		display: flex;
+		cursor: pointer;
 	}
 }
 @media(max-width: 953px){
@@ -4266,10 +4378,142 @@ path, svg{
 	.lending__content{
 		grid-gap: 8px;
 	}
+
+	.dashboard__content{
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	.dashboard__overview--content{
+		grid-template-columns: 1fr;
+	}
+
+	.dashboard__overview--balance{
+		grid-column: 1/1;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.dashboard__item, .dashboard__overview--item, .dashboard__overview--balance{
+		padding: 1.6rem;
+	}
+
+	.dashboard__overview--balance--wrapper{
+		margin-top: 1.6rem;
+	}
+
+	.chats__content--info--button{
+		margin-right: 1.6rem;
+	}
+
+	.dashboard__item{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.referal__box{
+		border-right: none;
+		max-width: 100%;
+	}
+
+	.dashboard__overview--title--inner{
+		flex-wrap: wrap;
+	}
+
+	.dashboard__main--tabs{
+		width: 100%;
+		order: 3;
+		margin-top: 1rem;
+	}
+
+	.refs__title{
+		font-size: 1.8rem;
+	}
+
+	.dashboard__title{
+		font-size: 2.4rem;
+	}
+
+	.wallets__title--inner{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.wallets__button--inner{
+		margin-top: 1rem;
+	}
+
+	.wallets__button--inner{
+		flex-wrap: wrap;
+	}
+
+	.wallets__button--last, .wallets__button{
+		margin: 0.5rem;
+	}
+
+	.exchange__item--pair{
+		width: 46%;
+	}
+
+	.exchange__item--price, .exchange__item--button{
+		width: 17%;
+	}
+
+	.profile__inner{
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.welcome__inner, .profile__inner{
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.welcome__kys, .welcome__register, .profile__item, .welcome__kys--points{
+		padding: 1.6rem;
+	}
+
+	.chats__content{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.chats__content--dialogs{
+		width: 100%;
+		max-width: 100%;
+		margin-right: 0;
+	}
+
+	.chats__content--content{
+		margin-top: 1.6rem;
+	}
+
+	.chats__content--inner{
+		height: 500px;
+	}
+}
+@media(max-width: 600px){
+	.exchange__item{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.exchange__item--exchange, .exchange__item--price, .exchange__item--button,
+	.exchange__item--pair{
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+		margin: 0.5rem 0;
+	}
+
+	.swap__inner{
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
 }
 @media(max-width: 480px){
 	.container{
 		max-width: 90%;
+	}
+
+	input{
+		font-size: 1.4rem;
 	}
 
 	.main__title{
@@ -4497,6 +4741,151 @@ path, svg{
 
 	.token__info--mobile--text{
 		color: var(--dark);
+	}
+
+	.dashboard__content{
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.dashboard__padding{
+		padding: 1rem;
+	}
+
+	.sidebar{
+		max-width: 100%;
+	}
+
+	.mess{
+		display: none;
+	}
+
+	.content__header--img--inner{
+		width: 48px;
+		height: 48px;
+	}
+
+	.content__header--wrapper{
+		width: 38px;
+		height: 38px;
+	}
+
+	.refs__copy--input{
+		font-size: 1.4rem;
+	}
+
+	.dashboard__main--tabs{
+		flex-wrap: wrap;
+	}
+
+	.profila__tab{
+		width: 100%;
+	}
+
+	.our__tab--text{
+		border-right: none;
+	}
+
+	.chats__content--info--button{
+		width: 38px;
+		height: 38px;
+	}
+
+	.dashboard__overview--button{
+		padding: 0.8rem 2.4rem 0.8rem 1.2rem;
+	}
+
+	.dashboard__overview--item--item, .order__box--item{
+		flex-wrap: wrap;
+	}
+	
+	.dashboard__overview--box, .order__box--item--event, .order__box--item--time, .order__box--item--usd,
+	.order__box--item--current{
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.order__box--title{
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.dashboard__overview--text.white{
+		text-align: center;
+	}
+
+	.dashboard__overview--coin{
+		justify-content: center;
+	}
+
+	.account__grid--text{
+		grid-template-columns: 1fr;
+	}
+
+	.account__grid--text .referal__text--item{
+		border-right: none;
+	}
+
+	.referal__text--item{
+		margin-top: 0.5rem;
+	}
+
+	.triple{
+		display: none;
+	}
+
+	.wallets__box{
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.wallets__item, .swap__content, .welcome__kys, .welcome__register, .profile__item,
+	.application__item{
+		padding: 1.2rem;
+	}
+
+	.wallets__item--data--inner{
+		padding: 1.6rem;
+	}
+
+	.wallets__item--data--current{
+		font-size: 2.4rem;
+	}
+
+	.swap__item--title{
+		margin-left: 0;
+	}
+
+	.verification__content, .welcome__content{
+		padding: 2rem;
+	}
+
+	.dash__title, .application__item--title{
+		font-size: 2.1rem;
+	}
+
+	.application__upload--img{
+		display: none;
+	}
+
+	.chats__content--send{
+		border-radius: 0 0 12px 12px;
+	}
+
+	.chats__content--send--input--inner{
+		margin: 0rem 0.8rem;
+	}
+
+	.chats__content--smile--button{
+		margin-right: 0.8rem;
+	}
+
+	.chats__content--info{
+		border-radius: 12px 12px 0 0;
+	}
+
+	.chats__content--wrapper, .chats__content--info, .chats__content--send{
+		padding: 1.2rem;
 	}
 }
 @media(max-width: 466px){

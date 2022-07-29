@@ -177,6 +177,18 @@ const Header = () => {
                                 <img src='./assets/img/arrow-menu.svg' alt='img' className='mobile__menu--arrow light' />
                                 <img src='./assets/img/arrow-menu-dark.svg' alt='img' className='mobile__menu--arrow dark' />
                             </button>
+
+                            <Link to="/dashboard" className='button mobile__menu--link w100 df aic jcsb'>
+                                <span className='df aic'>
+                                    <img src='./assets/img/layout.svg' alt='img' className='mobile__menu--icon light' />
+                                    <img src='./assets/img/layout-dark.svg' alt='img' className='mobile__menu--icon dark' />
+
+                                    Dashboard
+                                </span>
+
+                                <img src='./assets/img/arrow-menu.svg' alt='img' className='mobile__menu--arrow light' />
+                                <img src='./assets/img/arrow-menu-dark.svg' alt='img' className='mobile__menu--arrow dark' />
+                            </Link>
                         </div>
 
                         <div className='mobile__menu--social df fdc aifs'>
