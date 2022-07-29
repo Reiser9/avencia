@@ -55,12 +55,9 @@ const Header = () => {
                 <div className='container'>
                     <div className='header__inner w100 df aic jcsb'>
                         <div className='header__wrapper df aic'>
-                            <Link to='/' className='header__logo light df'>
-                                <img src='./assets/img/logo.svg' alt='logo' className='img' />
-                            </Link>
-
-                            <Link to='/' className='header__logo dark df'>
-                                <img src='./assets/img/logo-dark.svg' alt='logo' className='img' />
+                            <Link to='/' className='header__logo df'>
+                                <img src='./assets/img/logo.svg' alt='logo' className='img light' />
+                                <img src='./assets/img/logo-dark.svg' alt='logo' className='img dark' />
                             </Link>
 
                             <nav className='header__nav df aic'>
