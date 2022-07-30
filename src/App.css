@@ -1379,6 +1379,7 @@ p a{
 .question{
 	background: var(--bg);
 	position: relative;
+	z-index: 5;
 }
 
 .question:before{
@@ -3689,6 +3690,123 @@ body.light .sidebar__close.light, body.dark .sidebar__close.dark{
 	display: none;
 }
 
+/* Bridge app */
+.bridge__text{
+	margin-top: 1.2rem;
+	font-size: 1.8rem;
+	color: var(--dark);
+}
+
+.bridge__inner{
+	margin-top: 2.4rem;
+}
+
+.bridge__input{
+	width: 35%;
+}
+
+.bridge__button{
+	margin-left: 4.8rem;
+	border-radius: 15px;
+}
+
+.bridge__select--content{
+	margin-left: 4.8rem;
+	flex-wrap: wrap;
+}
+
+.bridge__select--button{
+	border-radius: 15px;
+}
+
+.bridge__arrow--img{
+	width: 24px;
+	margin: 0rem 1.2rem;
+}
+
+.bridge__select{
+	padding: 1.6rem 2.4rem;
+	cursor: pointer;
+	background: var(--roadline);
+	border-radius: 12px;
+}
+
+/* Vesting */
+.vesting__upload--inner{
+	margin-top: 1.2rem;
+}
+
+.vesting__upload{
+	color: var(--dark);
+}
+
+.vesting__upload--input{
+	margin-top: .4rem;
+}
+
+.vesting__button{
+	margin-top: 2.4rem;
+	border-radius: 15px;
+}
+
+.vesting__content{
+	margin-top: 2.4rem;
+}
+
+.vesting__input{
+	width: 100%;
+}
+
+.vesting__button--deposit{
+	margin-left: 1.6rem;
+	border-radius: 15px;
+}
+
+.vesting__table{
+	margin-top: 2.4rem;
+	padding: .8rem 0;
+	border-radius: 12px;
+	border: 1px solid var(--roadline);
+}
+
+.vesting__table--item{
+	padding: 0.8rem 1.2rem;
+	border-top: 1px solid var(--roadline);
+}
+
+.vesting__table--item:first-child{
+	border-top: none;
+}
+
+.vesting__table--no{
+	width: 9%;
+}
+
+.vesting__table--address{
+	width: 16%;
+}
+
+.vesting__table--start{
+	width: 19%;
+}
+
+.vesting__table--period{
+	width: 14%;
+}
+
+.vesting__table--cliff{
+	width: 10%;
+}
+
+.vesting__table--interval{
+	width: 15%;
+}
+
+.vesting__table--amount{
+	width: 17%;
+	text-align: right;
+}
+
 /* Responsive */
 @media(max-width: 1600px){
 	.main__point{
@@ -3849,6 +3967,15 @@ body.light .sidebar__close.light, body.dark .sidebar__close.dark{
 
 	.chats__content--message{
 		padding: 0rem 1.2rem;
+	}
+
+	.vesting__table--box{
+		font-size: 1.4rem;
+		margin-top: 0.4rem;
+	}
+
+	.vesting__table--box:first-child{
+		margin-top: 0;
 	}
 }
 @media(max-width: 998px){
@@ -4487,6 +4614,41 @@ body.light .sidebar__close.light, body.dark .sidebar__close.dark{
 
 	.chats__content--inner{
 		height: 500px;
+	}
+
+	.bridge__inner{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bridge__input{
+		width: 100%;
+	}
+
+	.bridge__select--content, .bridge__button{
+		margin: 1.6rem 0rem 0rem 0;
+	}
+
+	.bridge__text{
+		font-size: 1.6rem;
+	}
+
+	.vesting__table--box{
+		width: 100%;
+		text-align: center;
+	}
+
+	.vesting__table--item{
+		flex-direction: column;
+	}
+
+	.vesting__content{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.vesting__button--deposit{
+		margin: 1.2rem 0rem 0rem 0rem;
 	}
 }
 @media(max-width: 600px){

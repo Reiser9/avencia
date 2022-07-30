@@ -21,10 +21,16 @@ import Profile from '../Profile';
 import Welcome from '../Welcome';
 import Verification from '../Verification';
 import Application from '../Application';
+import Bridge from '../Bridge';
+import Vesting from '../Vesting';
 
 const Dashboard = () => {
     const [otherOpen, setOtherOpen] = React.useState(false);
     const [sidebarOpen, setSidebarOpen] = React.useState(false);
+
+    const closeSidebar = () => {
+        setSidebarOpen(true);
+    }
 
     return(
         <div className='content__wrapper w100 df'>
@@ -111,43 +117,43 @@ const Dashboard = () => {
                 </div>
 
                 <nav className="sidebar__nav w100">
-                    <NavLink end to='' className="sidebar__nav--link w100 df aic">
+                    <NavLink end to='' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <DashboardIcon />
 
                         Dashboard
                     </NavLink>
 
-                    <NavLink to='account' className="sidebar__nav--link w100 df aic">
+                    <NavLink to='account' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <AccountIcon />
 
                         My Account
                     </NavLink>
 
-                    <NavLink to='wallets' className="sidebar__nav--link w100 df aic">
+                    <NavLink to='wallets' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <WalletIcon />
 
                         Wallets
                     </NavLink>
 
-                    <NavLink to='swaporexchange' className="sidebar__nav--link w100 df aic">
+                    <NavLink to='swaporexchange' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <SwapIcon />
 
                         Swap / Exchange
                     </NavLink>
 
-                    <NavLink to='orders' className="sidebar__nav--link w100 df aic">
+                    <NavLink to='orders' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <OrderIcon />
 
                         Orders
                     </NavLink>
 
-                    <NavLink to='chats' className="sidebar__nav--link w100 df aic">
+                    <NavLink to='chats' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <ChatIcon />
 
                         Chats
                     </NavLink>
 
-                    <NavLink to='profile' className="sidebar__nav--link w100 df aic">
+                    <NavLink to='profile' className="sidebar__nav--link w100 df aic" onClick={closeSidebar}>
                         <ProfileIcon />
 
                         My Profile
@@ -164,16 +170,24 @@ const Dashboard = () => {
                     </button>
 
                     <div className={`other__wrapper w100 fdc aifs${otherOpen ? ' active' : ''}`}>
-                        <NavLink to='welcome' className="sidebar__nav--link level2 w100 df aic">
+                        <NavLink to='welcome' className="sidebar__nav--link level2 w100 df aic" onClick={closeSidebar}>
                             Welcome
                         </NavLink>
 
-                        <NavLink to='verification' className="sidebar__nav--link level2 w100 df aic">
+                        <NavLink to='verification' className="sidebar__nav--link level2 w100 df aic" onClick={closeSidebar}>
                             KYC Verification
                         </NavLink>
 
-                        <NavLink to='application' className="sidebar__nav--link level2 w100 df aic">
+                        <NavLink to='application' className="sidebar__nav--link level2 w100 df aic" onClick={closeSidebar}>
                             KYC Application
+                        </NavLink>
+
+                        <NavLink to='bridge' className="sidebar__nav--link level2 w100 df aic" onClick={closeSidebar}>
+                            Bridge
+                        </NavLink>
+
+                        <NavLink to='vesting' className="sidebar__nav--link level2 w100 df aic" onClick={closeSidebar}>
+                            Vesting
                         </NavLink>
                     </div>
                 </nav>
@@ -284,6 +298,8 @@ const Dashboard = () => {
                     <Route path="welcome" element={<Welcome />} />
                     <Route path="verification" element={<Verification />} />
                     <Route path="application" element={<Application />} />
+                    <Route path="bridge" element={<Bridge />} />
+                    <Route path="vesting" element={<Vesting />} />
                     <Route path="*" element={<Navigate to={"/dashboard"} />} />
                 </Routes>
             </div>
