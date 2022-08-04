@@ -3778,6 +3778,10 @@ body.light .sidebar__close.light, body.dark .sidebar__close.dark{
 	border-top: none;
 }
 
+.vesting__table--box{
+	color: var(--dark);
+}
+
 .vesting__table--no{
 	width: 9%;
 }
